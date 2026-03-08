@@ -18,7 +18,8 @@ public class PointerScript : MonoBehaviour
             Vector3 intersectX = targetViewportPos * (1 / Mathf.Abs(targetViewportPos.x));
             Vector3 intersectY = targetViewportPos * (1 / Mathf.Abs(targetViewportPos.y));
             float dist = Mathf.Min(intersectX.magnitude, intersectY.magnitude);
-            transform.position = targetViewportPos.normalized* pointerDist + PlayerScript.Instance.transform.position;
+            transform.position = targetViewportPos.normalized* pointerDist + PlayerScript.instance.transform.position;
+            //transform.position = Camera.main.ViewportToWorldPoint(targetViewportPos * dist) + PlayerScript.Instance.transform.position;
         }
     }
 

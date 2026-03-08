@@ -5,8 +5,12 @@ public class NPCScript : MonoBehaviour
     [SerializeField] float taskCoolDown;
     [SerializeField] PointerScript pointer;
 
+    public bool hasDrink;
+
     bool hasTask;
     float timer = 0;
+
+    float etiquette, munchies, sociability = 100;
 
     private void Awake()
     {
@@ -19,8 +23,11 @@ public class NPCScript : MonoBehaviour
         if (timer > taskCoolDown)
         {
             hasTask = true;
-            pointer.Show();
         }
+
+        etiquette-= Time.deltaTime;
+        munchies -= Time.deltaTime;
+        sociability -= Time.deltaTime;
     }
 
     public void CompleteTask()
@@ -32,10 +39,9 @@ public class NPCScript : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(Input.GetKeyDown(KeyCode.Space) && hasTask && collision.tag == "Player")
+        if(Input.GetKeyDown(KeyCode.Space) && hasTask && collision.tag == "Player" && MinigameManager.instance.state == GameState.idle)
         {
-            Debug.Log("start minigame");
-            CompleteTask();
+            MinigameManager.instance.StartMinigame(this);
         }
     }
 }

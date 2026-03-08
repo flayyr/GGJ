@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    public static PlayerScript Instance;
+    public static PlayerScript instance;
 
     [SerializeField] float moveSpeed;
 
@@ -10,7 +10,7 @@ public class PlayerScript : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        instance = this;
         rb = GetComponent<Rigidbody2D>();
     }
 
