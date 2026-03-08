@@ -3,6 +3,9 @@ using UnityEngine.UIElements;
 
 public class minigameExit : MonoBehaviour
 {
+    [SerializeField] float killXOffset;
+
+    private float startX;
 
     public bool exit = false;
 
@@ -13,6 +16,14 @@ public class minigameExit : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        transform.position = new Vector3(PlayerScript.instance.transform.position.x, PlayerScript.instance.transform.position.y, 0f);
+        startX = transform.position.x;
+    }
+
+    public void SetPositionToCamera()
+    {
+        //transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0f);
+        //startX = transform.position.x;
     }
 
     // Update is called once per frame
@@ -22,6 +33,11 @@ public class minigameExit : MonoBehaviour
         {
             leaveSpeed -= 20f * Time.deltaTime;
             transform.position = transform.position + new Vector3(leaveSpeed * Time.deltaTime, 0, 0);
+            if (transform.position.x < startX + killXOffset)
+            {
+                MinigameManager.instance.EndMinigame(true);
+                Destroy(gameObject);
+            }
         } 
     }
 }

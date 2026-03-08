@@ -7,7 +7,7 @@ public class NPCScript : MonoBehaviour
 
     public bool hasDrink;
 
-    bool hasTask;
+    bool interactInput;
     float timer = 0;
 
     float etiquette, munchies, sociability = 100;
@@ -19,10 +19,15 @@ public class NPCScript : MonoBehaviour
 
     private void Update()
     {
-        timer+=Time.deltaTime;
-        if (timer > taskCoolDown)
+        //timer+=Time.deltaTime;
+        //if (timer > taskCoolDown)
+        //{
+        //    hasTask = true;
+        //}
+
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            hasTask = true;
+            interactInput = true;
         }
 
         etiquette-= Time.deltaTime;
@@ -30,18 +35,24 @@ public class NPCScript : MonoBehaviour
         sociability -= Time.deltaTime;
     }
 
-    public void CompleteTask()
+    public void CompleteTask(GameType type)
     {
-        hasTask= false;
         timer = 0;
+        if (type == GameType.drink)
+        {
+            hasDrink = true;
+        }
     }
 
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(Input.GetKeyDown(KeyCode.Space) && hasTask && collision.tag == "Player" && MinigameManager.instance.state == GameState.idle)
+        if(interactInput && collision.tag == "Player" && MinigameManager.instance.state == GameState.idle && !hasDrink)
         {
-            MinigameManager.instance.StartMinigame(this);
+            Debug.Log("started");
+            MinigameManager.instance.StartMinigame(this, GameType.drink);
         }
+
+        interactInput = false;
     }
 }

@@ -16,6 +16,11 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
+        if (MinigameManager.instance.state == GameState.inGame)
+        {
+            return;
+        }
+
         Vector2 moveDir = Vector2.zero;
         if (Input.GetKey(KeyCode.A))
         {

@@ -301,7 +301,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9cf5e5f5eb99e945a8ba5c6a7265246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drinkMinigame: {fileID: 5730823887893090633, guid: 8c90dbd9e1ac53a40aef879a4faef1b0, type: 3}
   state: 0
+  gametype: 0
 --- !u!4 &63061212
 Transform:
   m_ObjectHideFlags: 0
@@ -329,7 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f116b874fa453c141a8d0e51a499ccc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toastInterval: 60
+  toastInterval: 90
 --- !u!1 &118610044
 GameObject:
   m_ObjectHideFlags: 0

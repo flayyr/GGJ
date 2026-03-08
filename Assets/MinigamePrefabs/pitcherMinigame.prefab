@@ -698,7 +698,7 @@ GameObject:
   - component: {fileID: 6767021506826225184}
   - component: {fileID: 5244177686369993025}
   - component: {fileID: 3472943222256496661}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ice
   m_TagString: ice
   m_Icon: {fileID: 0}
@@ -714,7 +714,7 @@ Transform:
   m_GameObject: {fileID: 1212644319756132424}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.44, y: 7.7400002, z: 10.030773}
+  m_LocalPosition: {x: 2.4399996, y: 12.74, z: 10.030773}
   m_LocalScale: {x: 4, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1024,7 +1024,7 @@ Transform:
   m_GameObject: {fileID: 1733047499642832925}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.94, y: -8.35, z: 10.030773}
+  m_LocalPosition: {x: -3.06, y: -3.3500004, z: 10.030773}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1109,7 +1109,7 @@ GameObject:
   - component: {fileID: 8923178851228674959}
   - component: {fileID: 9151905127157789588}
   - component: {fileID: 4227388403654600851}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ice
   m_TagString: ice
   m_Icon: {fileID: 0}
@@ -1125,7 +1125,7 @@ Transform:
   m_GameObject: {fileID: 1836969902203918398}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.65, y: 5.6299996, z: 10.030773}
+  m_LocalPosition: {x: 7.6499996, y: 10.629999, z: 10.030773}
   m_LocalScale: {x: 4, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1287,7 +1287,7 @@ Transform:
   m_GameObject: {fileID: 2659652811493924735}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.09, y: -6.5, z: 10.030773}
+  m_LocalPosition: {x: 4.09, y: -1.5, z: 10.030773}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1672,7 +1672,7 @@ GameObject:
   - component: {fileID: 2429403849522394153}
   - component: {fileID: 4838222097740083577}
   - component: {fileID: 4526641004749007117}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: winCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1688,7 +1688,7 @@ Transform:
   m_GameObject: {fileID: 3828482426460393945}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -91.09, y: -3.6599998, z: 10.030773}
+  m_LocalPosition: {x: -100.09, y: 1.3400002, z: 10.030773}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1931,7 +1931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5612328434813851166}
   - component: {fileID: 6496363396388423662}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Arm_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2020,7 +2020,7 @@ GameObject:
   - component: {fileID: 4088709866251907137}
   - component: {fileID: 6566782159954047846}
   - component: {fileID: 4722015504438238748}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ice
   m_TagString: ice
   m_Icon: {fileID: 0}
@@ -2036,7 +2036,7 @@ Transform:
   m_GameObject: {fileID: 4342420505983285642}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.74, y: 5.2999997, z: 10.030773}
+  m_LocalPosition: {x: 0.7399998, y: 10.299999, z: 10.030773}
   m_LocalScale: {x: 4, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2180,7 +2180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5762578201203747009}
   - component: {fileID: 3113519300177321581}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Thumb_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2196,7 +2196,7 @@ Transform:
   m_GameObject: {fileID: 4378862654296152117}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 5.244092, y: -8.5397415, z: 10.030773}
+  m_LocalPosition: {x: -3.755908, y: -3.5397415, z: 10.030773}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2270,7 +2270,7 @@ GameObject:
   - component: {fileID: 7765805334500224689}
   - component: {fileID: 1175805191532381896}
   - component: {fileID: 5236694691099248657}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ice
   m_TagString: ice
   m_Icon: {fileID: 0}
@@ -2286,7 +2286,7 @@ Transform:
   m_GameObject: {fileID: 4610506993803974169}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.42, y: 3.0099998, z: 10.030773}
+  m_LocalPosition: {x: 7.42, y: 8.01, z: 10.030773}
   m_LocalScale: {x: 4, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2432,7 +2432,7 @@ GameObject:
   - component: {fileID: 5233013371733814380}
   - component: {fileID: 503923784220355460}
   - component: {fileID: 4310093810806144806}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ice
   m_TagString: ice
   m_Icon: {fileID: 0}
@@ -2448,7 +2448,7 @@ Transform:
   m_GameObject: {fileID: 4864899233617018896}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.21, y: 4.57, z: 10.030773}
+  m_LocalPosition: {x: 2.21, y: 9.57, z: 10.030773}
   m_LocalScale: {x: 4, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2744,7 +2744,7 @@ GameObject:
   - component: {fileID: 7841652531192835903}
   - component: {fileID: 7661567844912789064}
   - component: {fileID: 5699670511250485674}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ice
   m_TagString: ice
   m_Icon: {fileID: 0}
@@ -2760,7 +2760,7 @@ Transform:
   m_GameObject: {fileID: 5341894516723689356}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.93, y: 3.27, z: 10.030773}
+  m_LocalPosition: {x: 3.9300003, y: 8.27, z: 10.030773}
   m_LocalScale: {x: 4, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2906,7 +2906,7 @@ GameObject:
   - component: {fileID: 7930031990259754756}
   - component: {fileID: 192945019076048127}
   - component: {fileID: 8948639333457640969}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ice
   m_TagString: ice
   m_Icon: {fileID: 0}
@@ -2922,7 +2922,7 @@ Transform:
   m_GameObject: {fileID: 5702565066110934444}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.77, y: 6.4, z: 10.030773}
+  m_LocalPosition: {x: 5.7700005, y: 11.4, z: 10.030773}
   m_LocalScale: {x: 4, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3336,7 +3336,7 @@ GameObject:
   - component: {fileID: 6134650770938396671}
   - component: {fileID: 5676155860328077234}
   - component: {fileID: 3511516532554746945}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ice
   m_TagString: ice
   m_Icon: {fileID: 0}
@@ -3352,7 +3352,7 @@ Transform:
   m_GameObject: {fileID: 6439989995532025699}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.219999, y: 4.64, z: 10.030773}
+  m_LocalPosition: {x: 5.2199993, y: 9.639999, z: 10.030773}
   m_LocalScale: {x: 4, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3646,7 +3646,7 @@ Transform:
   m_GameObject: {fileID: 6953525321232507910}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.91, y: 5.31, z: -10.030773}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3679,6 +3679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0025985ab36c7c64b8b8d6743f160e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  killXOffset: -18
   exit: 0
 --- !u!1 &7130398336751147491
 GameObject:
@@ -3692,7 +3693,7 @@ GameObject:
   - component: {fileID: 1072154017469913051}
   - component: {fileID: 8830901412753099763}
   - component: {fileID: 9164931363610198838}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ice
   m_TagString: ice
   m_Icon: {fileID: 0}
@@ -3708,7 +3709,7 @@ Transform:
   m_GameObject: {fileID: 7130398336751147491}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.43, y: 1.5100002, z: 10.030773}
+  m_LocalPosition: {x: 2.4300003, y: 6.51, z: 10.030773}
   m_LocalScale: {x: 4, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3854,7 +3855,7 @@ GameObject:
   - component: {fileID: 8645486777567179980}
   - component: {fileID: 4744679458168258348}
   - component: {fileID: 968251146915242556}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ice
   m_TagString: ice
   m_Icon: {fileID: 0}
@@ -3870,7 +3871,7 @@ Transform:
   m_GameObject: {fileID: 7616951983894684394}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.01, y: 3.3300004, z: 10.030773}
+  m_LocalPosition: {x: 0.010000229, y: 8.33, z: 10.030773}
   m_LocalScale: {x: 4, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4300,7 +4301,7 @@ GameObject:
   - component: {fileID: 2083364299654772087}
   - component: {fileID: 2566665277856656032}
   - component: {fileID: 9153100451764885063}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ice
   m_TagString: ice
   m_Icon: {fileID: 0}
@@ -4316,7 +4317,7 @@ Transform:
   m_GameObject: {fileID: 8725901392385672854}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.58, y: 1.1199999, z: 10.030773}
+  m_LocalPosition: {x: 4.58, y: 6.12, z: 10.030773}
   m_LocalScale: {x: 4, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
