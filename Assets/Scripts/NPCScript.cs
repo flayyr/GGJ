@@ -2,57 +2,84 @@ using UnityEngine;
 
 public class NPCScript : MonoBehaviour
 {
-    [SerializeField] float taskCoolDown;
     [SerializeField] PointerScript pointer;
+    [SerializeField] TableScript table;
+    [SerializeField] float irritationThreshold;
+    [SerializeField] public float timeToEat;
 
     public bool hasDrink;
 
     bool interactInput;
-    float timer = 0;
+    float irritateTimer = 0;
 
-    float etiquette, munchies, sociability = 100;
+    float etiquette = 100;
+    float munchies = 100;
 
     private void Awake()
     {
         pointer.Hide();
+        table.SetUp(this);
     }
 
     private void Update()
     {
-        //timer+=Time.deltaTime;
-        //if (timer > taskCoolDown)
-        //{
-        //    hasTask = true;
-        //}
-
         if (Input.GetKeyDown(KeyCode.Space))
         {
             interactInput = true;
         }
 
-        etiquette-= Time.deltaTime;
+        if (table.state == TableState.dirty)
+        {
+            etiquette -= Time.deltaTime;
+        } else
+        {
+            etiquette += Time.deltaTime;
+        }
         munchies -= Time.deltaTime;
-        sociability -= Time.deltaTime;
+
+        if(munchies<=0 || etiquette <= 0)
+        {
+            irritateTimer += Time.deltaTime;
+            if(irritateTimer > irritationThreshold)
+            {
+                Debug.Log("Too irritated, attendee leaving");
+            }
+        }
     }
 
     public void CompleteTask(GameType type)
     {
-        timer = 0;
         if (type == GameType.drink)
         {
             hasDrink = true;
         }
+        else if (type == GameType.deliver)
+        {
+            munchies += 50;
+        }
+        else if (type == GameType.clean)
+        {
+            table.Clean();
+        }
     }
-
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(interactInput && collision.tag == "Player" && MinigameManager.instance.state == GameState.idle && !hasDrink)
+        if (interactInput && collision.tag == "Player" && MinigameManager.instance.state == GameState.idle&& !hasDrink)
         {
-            Debug.Log("started");
             MinigameManager.instance.StartMinigame(this, GameType.drink);
         }
+    }
 
-        interactInput = false;
+    private void FixedUpdate()
+    {
+        if (interactInput)
+        {
+            Invoke("Uninteract", 0);
+        }
+    }
+    private void Uninteract()
+    {
+        interactInput=false;
     }
 }

@@ -1,13 +1,14 @@
 using UnityEngine;
 
 public enum GameState { idle, inGame }
-public enum GameType { none, drink, food}
+public enum GameType { none, drink, food, deliver, clean}
 
 public class MinigameManager : MonoBehaviour
 {
     public static MinigameManager instance;
 
     [SerializeField] minigameExit drinkMinigame;
+    [SerializeField] minigameExit cleanMinigame;
 
     [HideInInspector] public GameState state = GameState.idle;
     [HideInInspector] public GameType gametype = GameType.none;
@@ -25,8 +26,19 @@ public class MinigameManager : MonoBehaviour
         currNPC = npc;
         if (type == GameType.drink)
         {
-            minigameExit minigame = Instantiate(drinkMinigame);
-            minigame.SetPositionToCamera();
+            Instantiate(drinkMinigame);
+        }
+        else if (type == GameType.deliver)
+        {
+            EndMinigame(true);
+        }
+        else if (type == GameType.clean)
+        {
+            Instantiate(cleanMinigame);
+        }
+        else if (type == GameType.food)
+        {
+            //Instantiate(foodMinigame);
         }
     }
 

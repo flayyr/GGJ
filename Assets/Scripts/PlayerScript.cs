@@ -6,6 +6,8 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField] float moveSpeed;
 
+    public bool hasFood;
+
     Rigidbody2D rb;
 
     private void Awake()
@@ -18,6 +20,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (MinigameManager.instance.state == GameState.inGame)
         {
+            rb.linearVelocity = Vector3.zero;
             return;
         }
 

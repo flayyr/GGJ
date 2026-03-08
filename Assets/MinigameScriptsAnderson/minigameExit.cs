@@ -20,12 +20,6 @@ public class minigameExit : MonoBehaviour
         startX = transform.position.x;
     }
 
-    public void SetPositionToCamera()
-    {
-        //transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0f);
-        //startX = transform.position.x;
-    }
-
     // Update is called once per frame
     void Update()
     {
