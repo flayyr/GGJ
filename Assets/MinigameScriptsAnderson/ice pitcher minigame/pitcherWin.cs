@@ -9,39 +9,56 @@ public class pitcherWin : MonoBehaviour
     //private bool win;
 
     public GameObject winCard;
+    public GameObject loseCard;
+
+    private int ice;
 
     public GameObject parentPrefab;
 
     void Start()
     {
-        
+        ice = GameObject.FindGameObjectsWithTag("ice").Length;
     }
 
     // Update is called once per frame
     void Update()
     {
+        ice = GameObject.FindGameObjectsWithTag("ice").Length;
+
+        if (ice <= 0)
+        {
+            if (!loseCard.activeInHierarchy)
+            {
+                loseCard.SetActive(true);
+            }
+        }
+
         if (winCard.activeInHierarchy)
         {
             timer -= 1f * Time.deltaTime;
         }
 
-        if(timer < 0)
+        if (loseCard.activeInHierarchy)
+        {
+            timer -= 1f * Time.deltaTime;
+        }
+
+        if (timer < 0)
         {
             if (!parentPrefab.GetComponent<minigameExit>().exit)
             {
                 parentPrefab.GetComponent<minigameExit>().exit = true;
             }
         }
+
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "ice")
         {
-            Debug.Log("yo");
             if (!winCard.activeInHierarchy)
             {
-                Debug.Log("activating");
                 winCard.SetActive(true);
             }
         }
