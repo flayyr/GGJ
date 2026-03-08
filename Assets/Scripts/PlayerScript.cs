@@ -2,10 +2,25 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+    public static PlayerScript instance;
+
     [SerializeField] float moveSpeed;
+
+    Rigidbody2D rb;
+
+    private void Awake()
+    {
+        instance = this;
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
+        if (MinigameManager.instance.state == GameState.inGame)
+        {
+            return;
+        }
+
         Vector2 moveDir = Vector2.zero;
         if (Input.GetKey(KeyCode.A))
         {
@@ -26,6 +41,6 @@ public class PlayerScript : MonoBehaviour
 
         moveDir = moveDir.normalized;
 
-        transform.position += (Vector3)moveDir * moveSpeed * Time.deltaTime;
+        rb.linearVelocity = moveDir * moveSpeed;
     }
 }
