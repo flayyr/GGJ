@@ -2,7 +2,17 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+    public static PlayerScript Instance;
+
     [SerializeField] float moveSpeed;
+
+    Rigidbody2D rb;
+
+    private void Awake()
+    {
+        Instance = this;
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
@@ -26,6 +36,6 @@ public class PlayerScript : MonoBehaviour
 
         moveDir = moveDir.normalized;
 
-        transform.position += (Vector3)moveDir * moveSpeed * Time.deltaTime;
+        rb.linearVelocity = moveDir * moveSpeed;
     }
 }
