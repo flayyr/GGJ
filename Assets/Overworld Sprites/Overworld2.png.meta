@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 79cd27f838a0c44a68f62b62a3881980
+guid: 58456ba2bd5b641e2be316ae3e13e737
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -781268343710609952
-    second: TableDirty_0
+      213: -4396559656354276010
+    second: Overworld2_0
   - first:
-      213: 8656754027745972346
-    second: TableDirty_1
+      213: -3667516195858027460
+    second: Overworld2_1
   - first:
-      213: -6721950872331167754
-    second: TableDirty_2
+      213: 8617469335506586676
+    second: Overworld2_2
+  - first:
+      213: -3743428007808894336
+    second: Overworld2_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TableDirty_0
+      name: Overworld2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 59
-        height: 28
+        width: 390
+        height: 390
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ed0fdaa4906825f0800000000000000
-      internalID: -781268343710609952
+      spriteID: 65d903959484cf2c0800000000000000
+      internalID: -4396559656354276010
       vertices: []
       indices: 
       edges: []
@@ -144,7 +147,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9e1c49d8a67754e09b36f1d736fe5dbd
+    spriteID: 094e4f6a4a9404518ad4cd07cddff584
     internalID: 0
     vertices: []
     indices: 
@@ -154,7 +157,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TableDirty_0: -781268343710609952
+      Overworld2_0: -4396559656354276010
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
