@@ -6,7 +6,9 @@ public class pitcherWin : MonoBehaviour
 
     public float timer = 2f;
 
-    private bool win;
+    //private bool win;
+
+    public GameObject winCard;
 
     public GameObject parentPrefab;
 
@@ -18,22 +20,30 @@ public class pitcherWin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (winCard.activeInHierarchy)
+        {
+            timer -= 1f * Time.deltaTime;
+        }
 
-        //Debug.Log(timer);
-
-        /*
         if(timer < 0)
         {
-            parentPrefab.GetComponent<minigameExit>().exit = true;
+            if (!parentPrefab.GetComponent<minigameExit>().exit)
+            {
+                parentPrefab.GetComponent<minigameExit>().exit = true;
+            }
         }
-        */
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "ice")
         {
-            win = true;
+            Debug.Log("yo");
+            if (!winCard.activeInHierarchy)
+            {
+                Debug.Log("activating");
+                winCard.SetActive(true);
+            }
         }
     }
 

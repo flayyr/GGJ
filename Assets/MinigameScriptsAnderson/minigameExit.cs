@@ -20,7 +20,7 @@ public class minigameExit : MonoBehaviour
     {
         if (exit == true)
         {
-            leaveSpeed -= 10f * Time.deltaTime;
+            leaveSpeed -= 20f * Time.deltaTime;
             transform.position = transform.position + new Vector3(leaveSpeed * Time.deltaTime, 0, 0);
         } 
     }
