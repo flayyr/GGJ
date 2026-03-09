@@ -17,7 +17,7 @@ public class DrinkNPC : NPCScript
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && canInteract)
+        if (Input.GetKeyDown(KeyCode.Space) && canInteract && MinigameManager.instance.state == GameState.idle)
         {
             MinigameManager.instance.StartMinigame(this, GameType.drink);
         }
@@ -62,13 +62,13 @@ public class DrinkNPC : NPCScript
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Player" && MinigameManager.instance.state == GameState.idle)
+        if (collision.tag == "Player")
         {
             if (sociability<0)
             {
                 MinigameManager.instance.StartMinigame(this, GameType.chat);
-            }
-            if (!hasDrink)
+                canInteract = false;
+            } else if (!hasDrink)
             {
                 canInteract = true;
             }
