@@ -2448,7 +2448,7 @@ MonoBehaviour:
   grabbed: {fileID: 3178689199066720803, guid: 7f6dbd13431215c489078b89bf2a1c3d, type: 3}
   openHand: {fileID: -1935139924875356293, guid: 847c343a13a50214099ad4f7207d2ab0, type: 3}
   winCard: {fileID: 1281403355406198984}
-  timer: 2
+  timer: 1
   parentPrefab: {fileID: 3611858419633989893}
   softlockTimer: 30
   score: 0

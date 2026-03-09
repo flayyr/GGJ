@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class NPCScript : MonoBehaviour
 {
+    [SerializeField] bool moneyMan;
     [SerializeField] public PointerScript pointer;
     [SerializeField] public float irritationThreshold;
 
@@ -23,10 +24,17 @@ public class NPCScript : MonoBehaviour
         {
             Leave();
         }
+        if (moneyMan)
+        {
+            AttendeeManager.instance.attendeesLeft += 100;
+            GameEnd.instance.EndGame();
+            Debug.Log("die by moneyman");
+        }
     }
 
     protected virtual void Leave()
     {
+        AttendeeManager.instance.AttendeeLeave();
         Destroy(gameObject);
         Debug.Log("Too irritated, attendee leaving");
     }
