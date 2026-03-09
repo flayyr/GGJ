@@ -148,6 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50f07836ce803ff4785e8686f1976f1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cleanSprite: {fileID: 758047623694817235, guid: c504db00eaf284712bfc9ff9d3894a9b, type: 3}
+  eatingSprite: {fileID: 1929339097180641658, guid: 80969c97141e942288ffd8eefb57b073, type: 3}
+  dirtySprite: {fileID: -781268343710609952, guid: 79cd27f838a0c44a68f62b62a3881980, type: 3}
   state: 0
 --- !u!61 &-8446582650927372633
 BoxCollider2D:
