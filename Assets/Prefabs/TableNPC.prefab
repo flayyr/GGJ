@@ -154,7 +154,7 @@ MonoBehaviour:
   irritationThreshold: 30
   table: {fileID: 0}
   timeToEat: 2
-  munchiesIncreasePerFood: 0
+  munchiesIncreasePerFood: 50
 --- !u!95 &-8690339802555836800
 Animator:
   serializedVersion: 7

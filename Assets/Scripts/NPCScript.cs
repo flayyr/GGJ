@@ -6,19 +6,19 @@ public class NPCScript : MonoBehaviour
     [SerializeField] public PointerScript pointer;
     [SerializeField] public float irritationThreshold;
 
+    SpriteRenderer spriteRenderer;
+
     protected float irritateTimer = 0;
 
-    private void Awake()
+    private void Start()
     {
-        if (pointer != null)
-        {
-            pointer.Hide();
-        }
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void IncreaseIrritation(float amount)
     {
         irritateTimer += amount;
+        spriteRenderer.color = new Color(1f, 1f - (irritateTimer / irritationThreshold), 1f - (irritateTimer / irritationThreshold), 1f);
         if (irritateTimer >= irritationThreshold)
         {
             Leave();
