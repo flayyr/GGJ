@@ -38,12 +38,13 @@ public class shrimpStats : MonoBehaviour
         if(other.tag == "shrimpLock" && !other.gameObject.GetComponent<shrimpLock>().occupied)
         {
             closestLock = other.gameObject;
+            //Debug.Log(closestLock);
         }
     }
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if(!moving && closestLock != null && other.gameObject.tag == "shrimpLock")
+        if(!moving && closestLock != null && other.gameObject.tag == "shrimpLock" && other.gameObject == closestLock)
         {
             rotatable = false;
             other.gameObject.GetComponent<shrimpLock>().occupied = true;

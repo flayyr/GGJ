@@ -7,6 +7,14 @@ public class NPCScript : MonoBehaviour
 
     protected float irritateTimer = 0;
 
+    private void Awake()
+    {
+        if (pointer != null)
+        {
+            pointer.Hide();
+        }
+    }
+
     public void IncreaseIrritation(float amount)
     {
         irritateTimer += amount;

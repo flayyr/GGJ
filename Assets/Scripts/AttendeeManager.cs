@@ -31,7 +31,12 @@ public class AttendeeManager : MonoBehaviour
                 {
                     attendee.IncreaseIrritation(10);
                 }
+                else
+                {
+                    attendee.hasDrink = false;
+                }
             }
+            toastTimer = toastInterval;
         }
     }
 }

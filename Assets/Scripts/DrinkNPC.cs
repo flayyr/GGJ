@@ -13,6 +13,7 @@ public class DrinkNPC : NPCScript
     private void Awake()
     {
         sociability = baseSociability+Random.Range(0f,10f);
+        pointer.Hide();
     }
 
     private void Update()
@@ -23,6 +24,18 @@ public class DrinkNPC : NPCScript
         }
 
         sociability -= Time.deltaTime;
+
+        if (sociability <= 0)
+        {
+            pointer.Show(1);
+        }else if (!hasDrink)
+        {
+            pointer.Show(0);
+        }
+        else
+        {
+            pointer.Hide();
+        }
     }
 
     public override void CompleteTask(GameType type, bool success)
