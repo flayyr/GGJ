@@ -54,7 +54,6 @@ public class MinigameManager : MonoBehaviour
 
     public void EndMinigame(bool success)
     {
-        state = GameState.idle;
         if (currNPC != null)
         {
             currNPC.CompleteTask(gametype, success);
@@ -62,6 +61,7 @@ public class MinigameManager : MonoBehaviour
         {
             PlayerScript.instance.hasFood = true;
         }
+        state = GameState.idle;
     }
 
     public void EndMinigame(int level)
