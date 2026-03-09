@@ -34,7 +34,7 @@ public class ButtonController1 : MonoBehaviour
         progress++;
         if(progress >= 6)
         {
-            MinigameManager.instance.EndMinigame(2);
+            parent.EndTalk(2);
             parent.exit = true;
         }
         prevButton = 0;
@@ -50,7 +50,7 @@ public class ButtonController1 : MonoBehaviour
         progress++;
         if (progress >= 3)
         {
-            MinigameManager.instance.EndMinigame(1);
+            parent.EndTalk(1);
             parent.exit = true;
         }
         prevButton = 1;
@@ -59,7 +59,7 @@ public class ButtonController1 : MonoBehaviour
 
     public void RunAway()
     {
-        MinigameManager.instance.EndMinigame(0);
+        parent.EndTalk(0);
         parent.exit = true;
     }
 }
