@@ -6,6 +6,7 @@ public class minigameExit : MonoBehaviour
     [SerializeField] float killXOffset;
 
     private float startX;
+    public bool win = true;
 
     public bool exit = false;
 
@@ -20,12 +21,6 @@ public class minigameExit : MonoBehaviour
         startX = transform.position.x;
     }
 
-    public void SetPositionToCamera()
-    {
-        //transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0f);
-        //startX = transform.position.x;
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -35,7 +30,7 @@ public class minigameExit : MonoBehaviour
             transform.position = transform.position + new Vector3(leaveSpeed * Time.deltaTime, 0, 0);
             if (transform.position.x < startX + killXOffset)
             {
-                MinigameManager.instance.EndMinigame(true);
+                MinigameManager.instance.EndMinigame(win);
                 Destroy(gameObject);
             }
         } 

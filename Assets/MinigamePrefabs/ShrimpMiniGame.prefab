@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 716507084340430663}
   - component: {fileID: 7432042652637227498}
   - component: {fileID: 8958063263655906401}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shrimp (2)
   m_TagString: shrimp
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 2184909194911914460}
   - component: {fileID: 8861018298599240400}
   - component: {fileID: 7546359426060423768}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shrimp (8)
   m_TagString: shrimp
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 4463523622355812334}
   - component: {fileID: 141981223888445513}
   - component: {fileID: 1125136570142948845}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shrimpLock (7)
   m_TagString: shrimpLock
   m_Icon: {fileID: 0}
@@ -548,7 +548,7 @@ GameObject:
   - component: {fileID: 2714307894630735964}
   - component: {fileID: 5878391621287571528}
   - component: {fileID: 3019835458369817400}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shrimpLock (3)
   m_TagString: shrimpLock
   m_Icon: {fileID: 0}
@@ -723,7 +723,7 @@ GameObject:
   - component: {fileID: 7011974164160959496}
   - component: {fileID: 4589547136732777307}
   - component: {fileID: 8198260891178909564}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: winCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -835,7 +835,7 @@ GameObject:
   - component: {fileID: 2042115768104535}
   - component: {fileID: 4320310265583093047}
   - component: {fileID: 5889243850694695034}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shrimp (5)
   m_TagString: shrimp
   m_Icon: {fileID: 0}
@@ -1014,7 +1014,7 @@ GameObject:
   - component: {fileID: 1228487850513389244}
   - component: {fileID: 3375768634660977208}
   - component: {fileID: 8833874324004544061}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shrimpLock (1)
   m_TagString: shrimpLock
   m_Icon: {fileID: 0}
@@ -1188,7 +1188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8996731506477416164}
   - component: {fileID: 2505332069486898914}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ShrimpMiniGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1242,6 +1242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killXOffset: 18
+  win: 1
   exit: 0
 --- !u!1 &3951274447662981680
 GameObject:
@@ -1256,7 +1257,7 @@ GameObject:
   - component: {fileID: 8887623506420372442}
   - component: {fileID: 6907479977605908156}
   - component: {fileID: 8409384671056951362}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shrimpLock (6)
   m_TagString: shrimpLock
   m_Icon: {fileID: 0}
@@ -1433,7 +1434,7 @@ GameObject:
   - component: {fileID: 6539099216726378344}
   - component: {fileID: 4886189438741558310}
   - component: {fileID: 3390469634157114661}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shrimpLock (2)
   m_TagString: shrimpLock
   m_Icon: {fileID: 0}
@@ -1610,7 +1611,7 @@ GameObject:
   - component: {fileID: 7286664296510846570}
   - component: {fileID: 2148898470327871710}
   - component: {fileID: 6931148105749850032}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shrimpLock (5)
   m_TagString: shrimpLock
   m_Icon: {fileID: 0}
@@ -1784,7 +1785,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8727095446677475387}
   - component: {fileID: 3616505129059410970}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shrimpBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1874,7 +1875,7 @@ GameObject:
   - component: {fileID: 4126697271208153416}
   - component: {fileID: 1626388525222690460}
   - component: {fileID: 3907827420525483531}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shrimp (4)
   m_TagString: shrimp
   m_Icon: {fileID: 0}
@@ -2051,7 +2052,7 @@ GameObject:
   - component: {fileID: 4124536449211313143}
   - component: {fileID: 8663937940414563425}
   - component: {fileID: 7926039094287288148}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: handParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2134,7 +2135,7 @@ GameObject:
   - component: {fileID: 3939415516530282698}
   - component: {fileID: 3356663363753333648}
   - component: {fileID: 7581891015020175640}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shrimpLock
   m_TagString: shrimpLock
   m_Icon: {fileID: 0}
@@ -2309,7 +2310,7 @@ GameObject:
   - component: {fileID: 5299018604464434138}
   - component: {fileID: 457463613649757005}
   - component: {fileID: 2010635788292065541}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: actual hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2445,7 +2446,7 @@ GameObject:
   - component: {fileID: 7777867749420622637}
   - component: {fileID: 7920286886066540171}
   - component: {fileID: 8430027074825607884}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shrimp (3)
   m_TagString: shrimp
   m_Icon: {fileID: 0}
@@ -2624,7 +2625,7 @@ GameObject:
   - component: {fileID: 2085113462176435771}
   - component: {fileID: 8934484801328233967}
   - component: {fileID: 6970385731333409374}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shrimpLock (4)
   m_TagString: shrimpLock
   m_Icon: {fileID: 0}
@@ -2801,7 +2802,7 @@ GameObject:
   - component: {fileID: 2509238537585935550}
   - component: {fileID: 3235346737583022118}
   - component: {fileID: 7811286815879645439}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shrimp (1)
   m_TagString: shrimp
   m_Icon: {fileID: 0}
@@ -2980,7 +2981,7 @@ GameObject:
   - component: {fileID: 1370067302279360721}
   - component: {fileID: 8343364936722850838}
   - component: {fileID: 9006322479110061669}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shrimp (6)
   m_TagString: shrimp
   m_Icon: {fileID: 0}
@@ -3159,7 +3160,7 @@ GameObject:
   - component: {fileID: 1464267290371155363}
   - component: {fileID: 4743589384073210642}
   - component: {fileID: 95547961703431977}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: shrimp (7)
   m_TagString: shrimp
   m_Icon: {fileID: 0}

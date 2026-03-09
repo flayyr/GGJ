@@ -4,13 +4,13 @@ public class AttendeeManager : MonoBehaviour
 {
     [SerializeField] float toastInterval;
 
-    NPCScript[] attendees;
+    DrinkNPC[] attendees;
 
     float toastTimer;
 
     private void Start()
     {
-        attendees = FindObjectsByType<NPCScript>(FindObjectsSortMode.None);
+        attendees = FindObjectsByType<DrinkNPC>(FindObjectsSortMode.None);
         toastTimer = toastInterval;
     }
 
@@ -19,7 +19,7 @@ public class AttendeeManager : MonoBehaviour
         toastTimer-=Time.deltaTime;
         if (toastTimer <= 0)
         {
-            foreach (NPCScript attendee in attendees)
+            foreach (DrinkNPC attendee in attendees)
             {
                 if (!attendee.hasDrink)
                 {
