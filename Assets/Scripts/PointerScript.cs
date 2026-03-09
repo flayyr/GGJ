@@ -7,6 +7,7 @@ public class PointerScript : MonoBehaviour
     [SerializeField] Sprite noDrink;
     [SerializeField] Sprite social;
     [SerializeField] Sprite table;
+    [SerializeField] Sprite hungry;
     [SerializeField] SpriteRenderer spriteRenderer;
     private void Update()
     {
@@ -55,6 +56,9 @@ public class PointerScript : MonoBehaviour
         }else if (spriteIndex == 2)
         {
             spriteRenderer.sprite = table;
+        } else if(spriteIndex == 3)
+        {
+            spriteRenderer.sprite = hungry;
         }
     }
 

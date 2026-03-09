@@ -1,3 +1,4 @@
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
 public class NPCScript : MonoBehaviour
@@ -5,24 +6,29 @@ public class NPCScript : MonoBehaviour
     [SerializeField] public PointerScript pointer;
     [SerializeField] public float irritationThreshold;
 
+    SpriteRenderer spriteRenderer;
+
     protected float irritateTimer = 0;
 
-    private void Awake()
+    private void Start()
     {
-        if (pointer != null)
-        {
-            pointer.Hide();
-        }
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void IncreaseIrritation(float amount)
     {
         irritateTimer += amount;
-        if (irritateTimer > irritationThreshold)
+        spriteRenderer.color = new Color(1f, 1f - (irritateTimer / irritationThreshold), 1f - (irritateTimer / irritationThreshold), 1f);
+        if (irritateTimer >= irritationThreshold)
         {
-            Destroy(gameObject);
-            Debug.Log("Too irritated, attendee leaving");
+            Leave();
         }
+    }
+
+    protected virtual void Leave()
+    {
+        Destroy(gameObject);
+        Debug.Log("Too irritated, attendee leaving");
     }
 
     public virtual void CompleteTask(GameType type, bool success)

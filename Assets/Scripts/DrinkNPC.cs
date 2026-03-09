@@ -3,6 +3,7 @@ using UnityEngine;
 public class DrinkNPC : NPCScript
 {
     [SerializeField] float baseSociability;
+    [SerializeField] int selectIndex;
 
     public bool hasDrink;
 
@@ -79,7 +80,7 @@ public class DrinkNPC : NPCScript
         {
             if (sociability<0)
             {
-                MinigameManager.instance.StartMinigame(this, GameType.chat);
+                MinigameManager.instance.StartMinigame(this, GameType.chat, selectIndex);
                 canInteract = false;
             } else if (!hasDrink)
             {

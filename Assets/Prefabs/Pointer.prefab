@@ -50,6 +50,7 @@ MonoBehaviour:
   noDrink: {fileID: 7565341992042087549, guid: 9e6489c0297814dae98c4a58d86598e7, type: 3}
   social: {fileID: -1214527871902106553, guid: cbc559f6df82547c28e1fa6599a49b32, type: 3}
   table: {fileID: -772059614624589096, guid: f62b8b718f82345cea8a5b1f741b7641, type: 3}
+  hungry: {fileID: -1148850034119744398, guid: c3b1e8eb2144048669331aaa65816b8d, type: 3}
   spriteRenderer: {fileID: 4520921147900348486}
 --- !u!1 &5617486631017975073
 GameObject:

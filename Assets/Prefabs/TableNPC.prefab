@@ -153,8 +153,11 @@ MonoBehaviour:
   pointer: {fileID: 8102630978720055705}
   irritationThreshold: 30
   table: {fileID: 0}
-  timeToEat: 2
-  munchiesIncreasePerFood: 0
+  timeToEat: 30
+  munchiesIncreasePerFood: 120
+  etiquette: 50
+  munchies: 120
+  reducedIrritationOnFoodDeliver: 10
 --- !u!95 &-8690339802555836800
 Animator:
   serializedVersion: 7

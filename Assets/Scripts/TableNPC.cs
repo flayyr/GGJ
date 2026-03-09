@@ -6,8 +6,9 @@ public class TableNPC : NPCScript
     [SerializeField] public float timeToEat;
     [SerializeField] float munchiesIncreasePerFood;
 
-    float etiquette = 100;
-    float munchies = 100;
+    [SerializeField]float etiquette = 50;
+    [SerializeField]float munchies = 50;
+    [SerializeField] float reducedIrritationOnFoodDeliver = 10f;
 
     private void Awake()
     {
@@ -21,6 +22,7 @@ public class TableNPC : NPCScript
         if (type == GameType.deliver)
         {
             munchies += munchiesIncreasePerFood;
+            IncreaseIrritation(-reducedIrritationOnFoodDeliver);
         }
         else if (type == GameType.clean)
         {
@@ -29,21 +31,34 @@ public class TableNPC : NPCScript
         }
     }
 
+    protected override void Leave()
+    {
+        table.Clean();
+        Destroy(table);
+        base.Leave();
+    }
+
     private void Update()
     {
         if (table.state == TableState.dirty)
         {
             etiquette -= Time.deltaTime;
-            pointer.Show(2);
         }
         else
         {
             etiquette += Time.deltaTime;
         }
-        munchies -= Time.deltaTime;
 
-        if (munchies <= 0 || etiquette <= 0)
+        if(table.state != TableState.eating)
+            munchies -= Time.deltaTime;
+
+        if (etiquette <= 0)
         {
+            pointer.Show(2);
+            IncreaseIrritation(Time.deltaTime);
+        }else if(munchies <= 0)
+        {
+            pointer.Show(3);
             IncreaseIrritation(Time.deltaTime);
         }
         else
