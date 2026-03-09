@@ -6,6 +6,7 @@ public class ButtonController1 : MonoBehaviour
 {
     [SerializeField] Button[] buttons;
     [SerializeField] minigameExit parent;
+    [SerializeField] redTextController redTextController;
 
     int prevButton = -1;
     int progress = 0;
@@ -16,6 +17,11 @@ public class ButtonController1 : MonoBehaviour
         {
             Swap(buttons[Random.Range(0, 3)].transform, buttons[Random.Range(0, 3)].transform);
         }
+    }
+
+    public void SetRedTextIndex(int index)
+    {
+        redTextController.select = index;
     }
 
     private void Swap(Transform a, Transform b)
