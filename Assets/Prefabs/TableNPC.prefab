@@ -150,13 +150,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d1b5a92f0bd53243b71ce7549630676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moneyMan: 0
   pointer: {fileID: 8102630978720055705}
   irritationThreshold: 60
   table: {fileID: 0}
-  timeToEat: 30
+  timeToEat: 60
   munchiesIncreasePerFood: 120
-  etiquette: 50
-  munchies: 120
+  etiquette: 60
+  munchies: 160
   reducedIrritationOnFoodDeliver: 10
 --- !u!95 &-8690339802555836800
 Animator:

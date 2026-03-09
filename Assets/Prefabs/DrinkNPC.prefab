@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0abe72c8b6a9b549a58b88d6b18953f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moneyMan: 0
   pointer: {fileID: 5472030923622922350}
   irritationThreshold: 30
   baseSociability: 70
