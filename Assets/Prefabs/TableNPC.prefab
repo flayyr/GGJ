@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointer: {fileID: 8102630978720055705}
-  irritationThreshold: 30
+  irritationThreshold: 60
   table: {fileID: 0}
   timeToEat: 30
   munchiesIncreasePerFood: 120
