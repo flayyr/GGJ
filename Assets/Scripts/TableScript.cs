@@ -24,7 +24,7 @@ public class TableScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && canInteract)
         {
-            if (PlayerScript.instance.hasFood)
+            if (PlayerScript.instance.hasFood && state==TableState.clean)
             {
                 MinigameManager.instance.StartMinigame(attendee, GameType.deliver);
                 state = TableState.eating;

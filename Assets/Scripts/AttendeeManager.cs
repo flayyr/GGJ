@@ -1,8 +1,10 @@
+using TMPro;
 using UnityEngine;
 
 public class AttendeeManager : MonoBehaviour
 {
     [SerializeField] float toastInterval;
+    [SerializeField] TextMeshProUGUI toastTimerText;
 
     DrinkNPC[] attendees;
 
@@ -17,6 +19,7 @@ public class AttendeeManager : MonoBehaviour
     private void Update()
     {
         toastTimer-=Time.deltaTime;
+        toastTimerText.text = "Next Toast: "+Mathf.CeilToInt(toastTimer);
         if (toastTimer <= 0)
         {
             foreach (DrinkNPC attendee in attendees)

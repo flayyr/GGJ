@@ -17,6 +17,9 @@ public class CocktailBar : MonoBehaviour
         if (collision.tag == "Player" && MinigameManager.instance.state == GameState.idle && !PlayerScript.instance.hasFood)
         {
             canInteract = true;
+        } else
+        {
+            canInteract = false;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
