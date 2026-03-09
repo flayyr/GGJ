@@ -29,6 +29,13 @@ public class TableNPC : NPCScript
         }
     }
 
+    protected override void Leave()
+    {
+        table.Clean();
+        Destroy(table);
+        base.Leave();
+    }
+
     private void Update()
     {
         if (table.state == TableState.dirty)

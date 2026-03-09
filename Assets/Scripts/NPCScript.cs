@@ -1,3 +1,4 @@
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
 public class NPCScript : MonoBehaviour
@@ -18,11 +19,16 @@ public class NPCScript : MonoBehaviour
     public void IncreaseIrritation(float amount)
     {
         irritateTimer += amount;
-        if (irritateTimer > irritationThreshold)
+        if (irritateTimer >= irritationThreshold)
         {
-            Destroy(gameObject);
-            Debug.Log("Too irritated, attendee leaving");
+            Leave();
         }
+    }
+
+    protected virtual void Leave()
+    {
+        Destroy(gameObject);
+        Debug.Log("Too irritated, attendee leaving");
     }
 
     public virtual void CompleteTask(GameType type, bool success)
