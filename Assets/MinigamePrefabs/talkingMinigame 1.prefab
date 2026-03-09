@@ -690,6 +690,7 @@ MonoBehaviour:
   - {fileID: 2137744658246632778}
   - {fileID: 7178621238480930265}
   parent: {fileID: 7426274977397835924}
+  redTextController: {fileID: 6731537454344464792}
 --- !u!1 &4353781451382525531
 GameObject:
   m_ObjectHideFlags: 0
