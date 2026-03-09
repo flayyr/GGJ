@@ -48,6 +48,7 @@ public class pitcherWin : MonoBehaviour
             if (!parentPrefab.GetComponent<minigameExit>().exit)
             {
                 parentPrefab.GetComponent<minigameExit>().exit = true;
+                parentPrefab.GetComponent<minigameExit>().win = false;
             }
         }
 

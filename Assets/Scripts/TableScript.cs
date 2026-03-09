@@ -4,7 +4,7 @@ public enum TableState { clean, eating, dirty }
 public class TableScript : MonoBehaviour
 {
     NPCScript attendee;
-    bool interactInput;
+    bool canInteract;
     float eatingTimer;
 
     public TableState state = TableState.clean;
@@ -16,10 +16,20 @@ public class TableScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && canInteract)
         {
-            interactInput = true;
+            if (PlayerScript.instance.hasFood)
+            {
+                MinigameManager.instance.StartMinigame(attendee, GameType.deliver);
+                state = TableState.eating;
+                PlayerScript.instance.hasFood = false;
+            }
+            else if (state == TableState.dirty)
+            {
+                MinigameManager.instance.StartMinigame(attendee, GameType.clean);
+            }
         }
+
         if (state == TableState.eating)
         {
             eatingTimer += Time.deltaTime;
@@ -37,30 +47,9 @@ public class TableScript : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (interactInput && collision.tag == "Player" && MinigameManager.instance.state == GameState.idle)
+        if (collision.tag == "Player" && MinigameManager.instance.state == GameState.idle)
         {
-            if (PlayerScript.instance.hasFood)
-            {
-                MinigameManager.instance.StartMinigame(attendee, GameType.deliver);
-                state = TableState.eating;
-                PlayerScript.instance.hasFood = false;
-            }
-            else if (state==TableState.dirty)
-            {
-                MinigameManager.instance.StartMinigame(attendee, GameType.clean);
-            }
+            canInteract = true;
         }
-    }
-
-    private void FixedUpdate()
-    {
-        if (interactInput)
-        {
-            Invoke("Uninteract", 0.01f);
-        }
-    }
-    private void Uninteract()
-    {
-        interactInput = false;
     }
 }
