@@ -10,6 +10,7 @@ public class MinigameManager : MonoBehaviour
     [SerializeField] minigameExit drinkMinigame;
     [SerializeField] minigameExit cleanMinigame;
     [SerializeField] minigameExit shrimpMinigame;
+    [SerializeField] minigameExit chatMinigame;
 
     [HideInInspector] public GameState state = GameState.idle;
     [HideInInspector] public GameType gametype = GameType.none;
@@ -40,6 +41,10 @@ public class MinigameManager : MonoBehaviour
         else if (type == GameType.food)
         {
             Instantiate(shrimpMinigame);
+        }
+        else if (type == GameType.chat)
+        {
+            //Instantiate(chatMinigame);
         }
     }
 

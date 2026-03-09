@@ -625,6 +625,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6033255338855717169}
+  - component: {fileID: 7426274977397835924}
+  - component: {fileID: 8001128229568744890}
   m_Layer: 0
   m_Name: talkingMinigame
   m_TagString: Untagged
@@ -651,6 +653,33 @@ Transform:
   - {fileID: 8715747862908326638}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7426274977397835924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3517537556720754446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0025985ab36c7c64b8b8d6743f160e38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  killXOffset: -19
+  win: 1
+  exit: 0
+--- !u!114 &8001128229568744890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3517537556720754446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c51dbf7bc3edd34aaa8503b1f5652eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4353781451382525531
 GameObject:
   m_ObjectHideFlags: 0
