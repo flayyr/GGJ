@@ -3,15 +3,21 @@ using UnityEngine;
 public enum TableState { clean, eating, dirty }
 public class TableScript : MonoBehaviour
 {
+    [SerializeField] Sprite cleanSprite;
+    [SerializeField] Sprite eatingSprite;
+    [SerializeField] Sprite dirtySprite;
+
     TableNPC attendee;
     bool canInteract;
     float eatingTimer;
+    SpriteRenderer spriteRenderer;
 
     public TableState state = TableState.clean;
 
     public void SetUp(TableNPC attendee)
     {
         this.attendee = attendee;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -23,6 +29,7 @@ public class TableScript : MonoBehaviour
                 MinigameManager.instance.StartMinigame(attendee, GameType.deliver);
                 state = TableState.eating;
                 PlayerScript.instance.hasFood = false;
+                spriteRenderer.sprite = eatingSprite;
             }
             else if (state == TableState.dirty)
             {
@@ -36,6 +43,7 @@ public class TableScript : MonoBehaviour
             if (eatingTimer > attendee.timeToEat)
             {
                 state = TableState.dirty;
+                spriteRenderer.sprite = dirtySprite;
             }
         }
     }
@@ -43,6 +51,7 @@ public class TableScript : MonoBehaviour
     public void Clean()
     {
         state = TableState.clean;
+        spriteRenderer.sprite = cleanSprite;
     }
 
     private void OnTriggerStay2D(Collider2D collision)

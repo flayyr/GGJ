@@ -3397,10 +3397,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1647823320}
     m_Modifications:
-    - target: {fileID: 3589382343458244052, guid: 269c1405d03466a4f899e27509f8fc42, type: 3}
-      propertyPath: baseSociability
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3927324170315109714, guid: 269c1405d03466a4f899e27509f8fc42, type: 3}
       propertyPath: m_SortingOrder
       value: -20
@@ -6473,7 +6469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drinkMinigame: {fileID: 5730823887893090633, guid: 8c90dbd9e1ac53a40aef879a4faef1b0, type: 3}
-  cleanMinigame: {fileID: 7232467369020065374, guid: 2d392edef56fac342b8c6f582d6124c1, type: 3}
+  cleanMinigame: {fileID: 4590610424394918005, guid: fd2dc02da5ed4ce4abfcd8d5a472e1f0, type: 3}
   shrimpMinigame: {fileID: 2505332069486898914, guid: 17d603c70e14e54488464c4a97b749b1, type: 3}
   chatMinigame: {fileID: 7426274977397835924, guid: c6008813c1a561e49babad21674fe0db, type: 3}
   state: 0
