@@ -4009,7 +4009,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.22130612, y: 4.454075}
+  m_Offset: {x: -0.010144085, y: 4.4177413}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4019,7 +4019,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.7645178, y: 9.908152}
+  m_Size: {x: 1.3043094, y: 9.835483}
   m_EdgeRadius: 0
 --- !u!114 &3277028194422265
 MonoBehaviour:
@@ -4033,7 +4033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cbf8577e7347764ab185b3e9d0fbe36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 2
+  timer: 1
   winCard: {fileID: 3828482426460393945}
   loseCard: {fileID: 5731248980316229653}
   parentPrefab: {fileID: 6953525321232507910}
