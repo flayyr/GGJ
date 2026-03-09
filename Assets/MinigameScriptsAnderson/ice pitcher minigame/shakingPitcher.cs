@@ -48,13 +48,15 @@ public class shakingPitcher : MonoBehaviour
         {
             rb.transform.rotation *= Quaternion.Euler(0, 0, 0);
         }
-        float clampedX = Mathf.Clamp(mousePos.x,transform.parent.position.x+xPositionClamp, float.MaxValue);
-        rb.MovePosition(new Vector2(clampedX, mousePos.y));
+
+        
+        
     }
 
     private void FixedUpdate()
     {
-        
+        float clampedX = Mathf.Clamp(mousePos.x, transform.parent.position.x + xPositionClamp, float.MaxValue);
+        rb.MovePosition(new Vector2(clampedX, mousePos.y));
     }
 
 }
