@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public enum GameState { idle, inGame }
-public enum GameType { none, drink, food, deliver, clean}
+public enum GameType { none, drink, food, deliver, clean, chat}
 
 public class MinigameManager : MonoBehaviour
 {

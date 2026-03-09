@@ -1,3 +1,5 @@
+using Unity.Hierarchy;
+using Unity.XR.GoogleVr;
 using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
@@ -5,8 +7,17 @@ public class PlayerScript : MonoBehaviour
     public static PlayerScript instance;
 
     [SerializeField] float moveSpeed;
+    [SerializeField] float dashAmount;
+    [SerializeField] float dashDuration;
+    [SerializeField] float dashCD;
+    [SerializeField] float crashDuration;
 
-    public bool hasFood;
+    [HideInInspector]public bool hasFood;
+
+    bool dashing;
+    float crashTimer;
+    float dashTimer;
+    Vector2 prevMoveDir;
 
     Rigidbody2D rb;
 
@@ -18,9 +29,10 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
-        if (MinigameManager.instance.state == GameState.inGame)
+        if (MinigameManager.instance.state == GameState.inGame || crashTimer>0)
         {
             rb.linearVelocity = Vector3.zero;
+            crashTimer -= Time.deltaTime;
             return;
         }
 
@@ -44,6 +56,41 @@ public class PlayerScript : MonoBehaviour
 
         moveDir = moveDir.normalized;
 
-        rb.linearVelocity = moveDir * moveSpeed;
+        if (moveDir != Vector2.zero)
+        {
+            prevMoveDir= moveDir;
+        }
+
+
+        dashTimer -= Time.deltaTime;
+
+        if (!dashing && dashTimer<0 && Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            dashing = true;
+            rb.linearVelocity = prevMoveDir * moveSpeed * dashAmount;
+            dashTimer = dashDuration;
+        }
+
+        if (dashing)
+        {
+            if(dashTimer < 0)
+            {
+                dashing = false;
+                dashTimer = dashCD;
+            }
+        }
+        else
+        {
+            rb.linearVelocity = moveDir * moveSpeed;
+        }
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (dashing)
+        {
+            crashTimer = crashDuration;
+        }
     }
 }

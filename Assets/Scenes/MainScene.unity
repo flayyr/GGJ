@@ -919,6 +919,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
+  dashAmount: 3
+  dashDuration: 0.15
+  dashCD: 1
+  crashDuration: 3
   hasFood: 0
 --- !u!212 &1086122465
 SpriteRenderer:
@@ -1050,7 +1054,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
+  m_LinearDamping: 1.5
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
