@@ -36,7 +36,7 @@ public class DrinkNPC : NPCScript
             }
             else
             {
-                irritateTimer += 10;
+                IncreaseIrritation(10);
             }
         }
     }
@@ -47,7 +47,7 @@ public class DrinkNPC : NPCScript
         {
             if (level==0)
             {
-                irritateTimer += 10;
+                IncreaseIrritation(10);
                 sociability = baseSociability;
             }
             else if(level==1)

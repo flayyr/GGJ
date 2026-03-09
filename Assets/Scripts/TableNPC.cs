@@ -4,6 +4,7 @@ public class TableNPC : NPCScript
 {
     [SerializeField] TableScript table;
     [SerializeField] public float timeToEat;
+    [SerializeField] float munchiesIncreasePerFood;
 
     float etiquette = 100;
     float munchies = 100;
@@ -18,7 +19,7 @@ public class TableNPC : NPCScript
     {
         if (type == GameType.deliver)
         {
-            munchies += 50;
+            munchies += munchiesIncreasePerFood;
         }
         else if (type == GameType.clean)
         {
@@ -40,15 +41,11 @@ public class TableNPC : NPCScript
 
         if (munchies <= 0 || etiquette <= 0)
         {
-            irritateTimer += Time.deltaTime;
-            if (irritateTimer > irritationThreshold)
-            {
-                Debug.Log("Too irritated, attendee leaving");
-            }
+            IncreaseIrritation(Time.deltaTime);
         }
         else
         {
-            irritateTimer -= Time.deltaTime * 0.5f;
+            IncreaseIrritation(-Time.deltaTime * 0.5f);
             if (irritateTimer < 0)
             {
                 irritateTimer = 0;
