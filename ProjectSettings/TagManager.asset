@@ -42,8 +42,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackGround
+    uniqueID: 1509961273
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Minigame
+    uniqueID: 945932513
     locked: 0
   m_RenderingLayers:
   - Default
