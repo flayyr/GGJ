@@ -46,7 +46,7 @@ public class TableNPC : NPCScript
         }
         else
         {
-            etiquette += Time.deltaTime;
+            etiquette += Time.deltaTime * 0.33f;
         }
 
         if(table.state != TableState.eating)

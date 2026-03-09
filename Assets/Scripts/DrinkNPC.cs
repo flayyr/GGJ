@@ -5,7 +5,7 @@ public class DrinkNPC : NPCScript
     [SerializeField] float baseSociability;
     [SerializeField] int selectIndex;
 
-    public bool hasDrink;
+    [SerializeField]public bool hasDrink;
 
     bool canInteract;
 
@@ -26,12 +26,13 @@ public class DrinkNPC : NPCScript
 
         sociability -= Time.deltaTime;
 
-        if (sociability <= 0)
-        {
-            pointer.Show(1);
-        }else if (!hasDrink)
+        if (!hasDrink)
         {
             pointer.Show(0);
+        }
+        else if (sociability <= 0)
+        {
+            pointer.Show(1);
         }
         else
         {
