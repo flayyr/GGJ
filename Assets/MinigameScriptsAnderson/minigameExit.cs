@@ -30,9 +30,26 @@ public class minigameExit : MonoBehaviour
             transform.position = transform.position + new Vector3(leaveSpeed * Time.deltaTime, 0, 0);
             if (transform.position.x < startX + killXOffset)
             {
-                MinigameManager.instance.EndMinigame(win);
+                if (endTalk)
+                {
+                    MinigameManager.instance.EndMinigame(talkLevel);
+                    endTalk = false;
+                }
+                else
+                {
+                    MinigameManager.instance.EndMinigame(win);
+                }
                 Destroy(gameObject);
             }
         } 
+    }
+
+    bool endTalk = false;
+    int talkLevel = -1;
+
+    public void EndTalk(int level)
+    {
+        endTalk = true;
+        talkLevel = level;
     }
 }
