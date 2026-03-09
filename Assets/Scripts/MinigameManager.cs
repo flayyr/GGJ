@@ -44,7 +44,7 @@ public class MinigameManager : MonoBehaviour
         }
         else if (type == GameType.chat)
         {
-            //Instantiate(chatMinigame);
+            Instantiate(chatMinigame);
         }
     }
 
@@ -57,6 +57,15 @@ public class MinigameManager : MonoBehaviour
         } else
         {
             PlayerScript.instance.hasFood = true;
+        }
+    }
+
+    public void EndMinigame(int level)
+    {
+        state = GameState.idle;
+        if (currNPC != null)
+        {
+            currNPC.CompleteTask(gametype, level);
         }
     }
 }

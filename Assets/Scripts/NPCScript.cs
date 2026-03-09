@@ -11,4 +11,9 @@ public class NPCScript : MonoBehaviour
     {
         
     }
+
+    public virtual void CompleteTask(GameType type, int level)
+    {
+
+    }
 }

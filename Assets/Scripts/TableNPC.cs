@@ -11,6 +11,7 @@ public class TableNPC : NPCScript
     private void Awake()
     {
         table.SetUp(this);
+        irritateTimer -= Random.Range(0f, 5f);
     }
 
     public override void CompleteTask(GameType type, bool success)
