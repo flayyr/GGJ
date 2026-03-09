@@ -8,6 +8,10 @@ public class shakingPitcher : MonoBehaviour
     public float wigglePower = 4f;
     public float followSpeed = 4f;
 
+    //public bool noFollow = false;
+
+    //private float offset;
+
     private Vector2 mousePos;
 
     private Rigidbody2D rb;
@@ -16,12 +20,17 @@ public class shakingPitcher : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        mousePos = Input.mousePosition;
+        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+
+        //offset = transform.position.x - 4f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
         mousePos = Input.mousePosition;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
         
