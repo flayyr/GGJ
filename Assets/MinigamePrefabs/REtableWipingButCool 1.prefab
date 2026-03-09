@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eea9b19b13716244b152b9f429e1312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wipeAmount: 100
+  wipeAmount: 70
   parent: {fileID: 4590610424394918005}
   stain1: {fileID: 22294512820129246}
   stain2: {fileID: 3364620970466413507}
@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0025985ab36c7c64b8b8d6743f160e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killXOffset: -19
+  killXOffset: -10
   win: 1
   exit: 0
 --- !u!1 &6974366483499587903

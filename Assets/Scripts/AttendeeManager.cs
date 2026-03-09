@@ -25,9 +25,11 @@ public class AttendeeManager : MonoBehaviour
         {
             foreach (DrinkNPC attendee in attendees)
             {
+                if(attendee==null) continue;
+
                 if (!attendee.hasDrink)
                 {
-                    Debug.Log("you lost, not enough people have drinks!");
+                    attendee.IncreaseIrritation(10);
                 }
             }
         }
