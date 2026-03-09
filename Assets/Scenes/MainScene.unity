@@ -343,6 +343,18 @@ PrefabInstance:
       propertyPath: table
       value: 
       objectReference: {fileID: 495827635}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: munchies
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: timeToEat
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: munchiesIncreasePerFood
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 3990452947795247835, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
       propertyPath: m_Name
       value: TableNPC
