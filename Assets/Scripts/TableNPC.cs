@@ -11,6 +11,7 @@ public class TableNPC : NPCScript
 
     private void Awake()
     {
+        pointer.Hide();
         table.SetUp(this);
         irritateTimer -= Random.Range(0f, 5f);
     }
@@ -24,6 +25,7 @@ public class TableNPC : NPCScript
         else if (type == GameType.clean)
         {
             table.Clean();
+            pointer.Hide();
         }
     }
 
@@ -32,6 +34,7 @@ public class TableNPC : NPCScript
         if (table.state == TableState.dirty)
         {
             etiquette -= Time.deltaTime;
+            pointer.Show(2);
         }
         else
         {
