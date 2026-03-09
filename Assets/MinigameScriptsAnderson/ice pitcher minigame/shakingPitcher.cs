@@ -24,8 +24,6 @@ public class shakingPitcher : MonoBehaviour
         
         mousePos = Input.mousePosition;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-
-        rb.MovePosition(mousePos);
         
 
         if (Input.GetKey(KeyCode.A))
@@ -42,4 +40,10 @@ public class shakingPitcher : MonoBehaviour
         }
 
     }
+
+    private void FixedUpdate()
+    {
+        rb.MovePosition(mousePos);
+    }
+
 }

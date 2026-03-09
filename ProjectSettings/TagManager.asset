@@ -6,6 +6,8 @@ TagManager:
   tags:
   - minigame
   - ice
+  - shrimp
+  - shrimpLock
   layers:
   - Default
   - TransparentFX
