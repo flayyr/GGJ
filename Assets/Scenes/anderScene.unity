@@ -335,7 +335,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &30298912223263053
+--- !u!1001 &1991744771357540772
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -343,47 +343,47 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3611858419633989893, guid: 17d603c70e14e54488464c4a97b749b1, type: 3}
+    - target: {fileID: 3517537556720754446, guid: c6008813c1a561e49babad21674fe0db, type: 3}
       propertyPath: m_Name
-      value: ShrimpMiniGame
+      value: talkingMinigame
       objectReference: {fileID: 0}
-    - target: {fileID: 8996731506477416164, guid: 17d603c70e14e54488464c4a97b749b1, type: 3}
+    - target: {fileID: 6033255338855717169, guid: c6008813c1a561e49babad21674fe0db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.2205498
+      value: 0.7731747
       objectReference: {fileID: 0}
-    - target: {fileID: 8996731506477416164, guid: 17d603c70e14e54488464c4a97b749b1, type: 3}
+    - target: {fileID: 6033255338855717169, guid: c6008813c1a561e49babad21674fe0db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.11362769
+      value: 0.6194844
       objectReference: {fileID: 0}
-    - target: {fileID: 8996731506477416164, guid: 17d603c70e14e54488464c4a97b749b1, type: 3}
+    - target: {fileID: 6033255338855717169, guid: c6008813c1a561e49babad21674fe0db, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.06450172
+      value: 0.73852617
       objectReference: {fileID: 0}
-    - target: {fileID: 8996731506477416164, guid: 17d603c70e14e54488464c4a97b749b1, type: 3}
+    - target: {fileID: 6033255338855717169, guid: c6008813c1a561e49babad21674fe0db, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8996731506477416164, guid: 17d603c70e14e54488464c4a97b749b1, type: 3}
+    - target: {fileID: 6033255338855717169, guid: c6008813c1a561e49babad21674fe0db, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8996731506477416164, guid: 17d603c70e14e54488464c4a97b749b1, type: 3}
+    - target: {fileID: 6033255338855717169, guid: c6008813c1a561e49babad21674fe0db, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8996731506477416164, guid: 17d603c70e14e54488464c4a97b749b1, type: 3}
+    - target: {fileID: 6033255338855717169, guid: c6008813c1a561e49babad21674fe0db, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8996731506477416164, guid: 17d603c70e14e54488464c4a97b749b1, type: 3}
+    - target: {fileID: 6033255338855717169, guid: c6008813c1a561e49babad21674fe0db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8996731506477416164, guid: 17d603c70e14e54488464c4a97b749b1, type: 3}
+    - target: {fileID: 6033255338855717169, guid: c6008813c1a561e49babad21674fe0db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8996731506477416164, guid: 17d603c70e14e54488464c4a97b749b1, type: 3}
+    - target: {fileID: 6033255338855717169, guid: c6008813c1a561e49babad21674fe0db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
@@ -391,11 +391,11 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 17d603c70e14e54488464c4a97b749b1, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: c6008813c1a561e49babad21674fe0db, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 63742046}
   - {fileID: 423751131}
-  - {fileID: 30298912223263053}
+  - {fileID: 1991744771357540772}

@@ -19,17 +19,4 @@ public class shrimpLock : MonoBehaviour
 
     }
 
-    /*
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "shrimp" && !occupied)
-        {
-
-            if (!other.gameObject.GetComponent<shrimpStats>().moving)
-            {
-                other.gameObject.GetComponent<shrimpStats>().locked = true;
-            }
-        }
-    }
-    */
 }
