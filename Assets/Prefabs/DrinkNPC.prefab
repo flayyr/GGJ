@@ -199,7 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointer: {fileID: 5472030923622922350}
   irritationThreshold: 30
-  baseSociability: 30
+  baseSociability: 70
   hasDrink: 0
 --- !u!95 &-4665940925515765711
 Animator:
