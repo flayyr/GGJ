@@ -6,13 +6,16 @@ public class AttendeeManager : MonoBehaviour
     public static AttendeeManager instance;
 
     [SerializeField] float toastInterval;
+    [SerializeField] int numOfToasts;
+    [SerializeField] float endingTimeLength;
     [SerializeField] TextMeshProUGUI toastTimerText;
 
-    public int attendeesLeft = 0;
+    [HideInInspector]public int attendeesLeft = 0;
 
     DrinkNPC[] attendees;
 
     float toastTimer;
+    int currToast = 0;
 
     private void Awake()
     {
@@ -34,8 +37,25 @@ public class AttendeeManager : MonoBehaviour
     private void Update()
     {
         toastTimer-=Time.deltaTime;
-        if(toastTimerText!=null)
-            toastTimerText.text = "Next Toast: "+Mathf.CeilToInt(toastTimer);
+        if (toastTimerText != null)
+        {
+            if (currToast == numOfToasts)
+            {
+                if (toastTimer < 0)
+                {
+                    toastTimer = 0;
+                }
+                toastTimerText.text = "Time 'til Clock Out: " + Mathf.CeilToInt(toastTimer);
+            } else
+            if (currToast == numOfToasts - 1)
+            {
+                toastTimerText.text = "Final Toast: " + Mathf.CeilToInt(toastTimer);
+            }
+            else
+            {
+                toastTimerText.text = "Next Toast: " + Mathf.CeilToInt(toastTimer);
+            }
+        }
         if (toastTimer <= 0)
         {
             foreach (DrinkNPC attendee in attendees)
@@ -52,6 +72,13 @@ public class AttendeeManager : MonoBehaviour
                 }
             }
             toastTimer = toastInterval;
+            currToast++;
+            if (currToast == numOfToasts)
+            {
+                GameEnd.instance.finalTimerLength = endingTimeLength;
+                GameEnd.instance.ending = true;
+                toastInterval = endingTimeLength;
+            }
         }
     }
 }
