@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 1a8fff053611b4d4ea5eb39de676584f
+guid: cfa763b69786342a6b21d1791f2db70f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7988400129252142891
-    second: Attendee3_0
+      213: -4190372650402964548
+    second: StandingLamps_0
   - first:
-      213: -4862564801683525008
-    second: Attendee3_1
+      213: -1189520488469916659
+    second: StandingLamps_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attendee3_0
+      name: StandingLamps_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 17
-        height: 27
+        x: 27
+        y: 3
+        width: 18
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d0dd342860832190800000000000000
-      internalID: -7988400129252142891
+      spriteID: cbb1838a64ec8d5c0800000000000000
+      internalID: -4190372650402964548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attendee3_1
+      name: StandingLamps_1
       rect:
         serializedVersion: 2
-        x: 15
-        y: 0
-        width: 17
-        height: 27
+        x: 54
+        y: 2
+        width: 15
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 072f55a6313b48cb0800000000000000
-      internalID: -4862564801683525008
+      spriteID: d0493b70b69fd7fe0800000000000000
+      internalID: -1189520488469916659
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Attendee3_0: -7988400129252142891
-      Attendee3_1: -4862564801683525008
+      StandingLamps_0: -4190372650402964548
+      StandingLamps_1: -1189520488469916659
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
