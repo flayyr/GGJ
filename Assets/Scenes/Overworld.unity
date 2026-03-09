@@ -4675,6 +4675,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: f233bd3bd95cb43ea850d109cf92ecb6, type: 2}
+    - target: {fileID: 3589382343458244052, guid: 269c1405d03466a4f899e27509f8fc42, type: 3}
+      propertyPath: baseSociability
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3927324170315109714, guid: 269c1405d03466a4f899e27509f8fc42, type: 3}
       propertyPath: m_SortingOrder
       value: -20
