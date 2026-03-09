@@ -4999,6 +4999,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6269982935303954153, guid: 9498aa2c2fb55a649a4fc7084dee59ae, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6269982935303954153, guid: 9498aa2c2fb55a649a4fc7084dee59ae, type: 3}
       propertyPath: m_SortingOrder
       value: -10
       objectReference: {fileID: 0}
@@ -5043,20 +5047,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9133497416049897030, guid: 9498aa2c2fb55a649a4fc7084dee59ae, type: 3}
-      propertyPath: moveSpeed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 9133497416049897030, guid: 9498aa2c2fb55a649a4fc7084dee59ae, type: 3}
       propertyPath: dashAmount
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9133497416049897030, guid: 9498aa2c2fb55a649a4fc7084dee59ae, type: 3}
       propertyPath: dashDuration
       value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 9133497416049897030, guid: 9498aa2c2fb55a649a4fc7084dee59ae, type: 3}
-      propertyPath: crashDuration
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8632,7 +8628,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toastInterval: 90
-  toastTimerText: {fileID: 0}
 --- !u!114 &2084462304
 MonoBehaviour:
   m_ObjectHideFlags: 0
