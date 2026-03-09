@@ -10,6 +10,10 @@ public class TableWiping : MonoBehaviour
     public GameObject stain2;
     public GameObject stain3;
 
+    private Color tempColor1;
+    private Color tempColor2;
+    private Color tempColor3;
+
     public float timer = 2f;
 
     public GameObject winCard;
@@ -20,17 +24,27 @@ public class TableWiping : MonoBehaviour
     private void Start()
     {
         prevPos = transform.position;
+
+        tempColor1 = stain1.GetComponent<SpriteRenderer>().material.color;
+
     }
     private void Update()
     {
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = new Vector3(mousePos.x, mousePos.y, 0f);
-        dist += (transform.position - prevPos).magnitude;
-        prevPos = transform.position;
+        if (!winCard.activeInHierarchy)
+        {
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            transform.position = new Vector3(mousePos.x, mousePos.y, 0f);
+            dist += (transform.position - prevPos).magnitude;
+            prevPos = transform.position;
+        }
 
-        stain1.GetComponent<SpriteRenderer>().material.color = new Color(1, 1, 1, wipeAmount/255);
-        stain2.GetComponent<SpriteRenderer>().material.color = new Color(1, 1, 1, wipeAmount/255);
-        stain3.GetComponent<SpriteRenderer>().material.color = new Color(1, 1, 1, wipeAmount/255);
+        //Debug.Log(tempColor1.a);
+
+        stain1.GetComponent<SpriteRenderer>().material.color = tempColor1;
+        stain2.GetComponent<SpriteRenderer>().material.color = tempColor1;
+        stain3.GetComponent<SpriteRenderer>().material.color = tempColor1;
+
+        tempColor1.a = Mathf.Abs((255 - dist) / 255);
 
         if (winCard.activeInHierarchy)
         {
