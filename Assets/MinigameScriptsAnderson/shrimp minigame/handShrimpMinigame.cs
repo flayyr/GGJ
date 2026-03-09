@@ -13,6 +13,8 @@ public class handShrimpMinigame : MonoBehaviour
 
     public GameObject parentPrefab;
 
+    public float softlockTimer = 25f;
+
     public int score;
 
     private GameObject closestShrimp;
@@ -59,8 +61,10 @@ public class handShrimpMinigame : MonoBehaviour
             }
         }
 
+        softlockTimer -= Time.deltaTime;
+
         //handles win condition
-        if(score >= 8)
+        if(score >= 8 || softlockTimer <= 0)
         {
             if (!winCard.activeInHierarchy)
             {
