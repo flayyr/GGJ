@@ -22,6 +22,7 @@ public class ButtonController1 : MonoBehaviour
     public void SetRedTextIndex(int index)
     {
         redTextController.select = index;
+        redTextController.SetUp();
     }
 
     private void Swap(Transform a, Transform b)

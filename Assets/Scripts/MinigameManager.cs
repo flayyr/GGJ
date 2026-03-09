@@ -21,7 +21,7 @@ public class MinigameManager : MonoBehaviour
         instance = this;
     }
 
-    public void StartMinigame(NPCScript npc, GameType type, int index=0)
+    public void StartMinigame(NPCScript npc, GameType type, int index=1)
     {
         if (state == GameState.inGame)
         {
@@ -50,6 +50,7 @@ public class MinigameManager : MonoBehaviour
         {
             GameObject minigame = Instantiate(chatMinigame).gameObject;
             minigame.GetComponent<ButtonController1>().SetRedTextIndex(index);
+
         }
     }
 
