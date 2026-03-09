@@ -7,6 +7,7 @@ public class shakingPitcher : MonoBehaviour
 
     public float wigglePower = 4f;
     public float followSpeed = 4f;
+    public float xPositionClamp = -3f;
 
     //public bool noFollow = false;
 
@@ -52,7 +53,8 @@ public class shakingPitcher : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.MovePosition(mousePos);
+        float clampedX = Mathf.Clamp(mousePos.x,transform.parent.position.x+xPositionClamp, float.MaxValue);
+        rb.MovePosition(new Vector2(clampedX, mousePos.y));
     }
 
 }
