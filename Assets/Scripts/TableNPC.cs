@@ -8,6 +8,7 @@ public class TableNPC : NPCScript
 
     [SerializeField]float etiquette = 50;
     [SerializeField]float munchies = 50;
+    [SerializeField] float reducedIrritationOnFoodDeliver = 10f;
 
     private void Awake()
     {
@@ -21,6 +22,7 @@ public class TableNPC : NPCScript
         if (type == GameType.deliver)
         {
             munchies += munchiesIncreasePerFood;
+            IncreaseIrritation(-reducedIrritationOnFoodDeliver);
         }
         else if (type == GameType.clean)
         {
@@ -46,7 +48,9 @@ public class TableNPC : NPCScript
         {
             etiquette += Time.deltaTime;
         }
-        munchies -= Time.deltaTime;
+
+        if(table.state != TableState.eating)
+            munchies -= Time.deltaTime;
 
         if (etiquette <= 0)
         {
