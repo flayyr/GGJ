@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: fc994b563dc6c4a4c8eff2ecfcd42202
+guid: acc4cc3df538e4b3aa888c26d9eaeb96
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3873579470139248697
-    second: Attendee1_0
+      213: 1516086246305219957
+    second: Attendee2_0
   - first:
-      213: 3088574718163160580
-    second: Attendee1_1
+      213: 8279147736298962008
+    second: Attendee2_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attendee1_0
+      name: Attendee2_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 0
         y: 0
-        width: 19
-        height: 27
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93055e64108b1c530800000000000000
-      internalID: 3873579470139248697
+      spriteID: 575c0ef88683a0510800000000000000
+      internalID: 1516086246305219957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attendee1_1
+      name: Attendee2_1
       rect:
         serializedVersion: 2
-        x: 37
+        x: 30
         y: 0
-        width: 19
-        height: 26
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40e0e5a9752dcda20800000000000000
-      internalID: 3088574718163160580
+      spriteID: 85c3419500175e270800000000000000
+      internalID: 8279147736298962008
       vertices: []
       indices: 
       edges: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3e8ca709b59734aae83816d8266c9e5d
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Attendee1_0: 3873579470139248697
-      Attendee1_1: 3088574718163160580
+      Attendee2_0: 1516086246305219957
+      Attendee2_1: 8279147736298962008
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

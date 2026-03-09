@@ -23,6 +23,10 @@ public class MinigameManager : MonoBehaviour
 
     public void StartMinigame(NPCScript npc, GameType type)
     {
+        if (state == GameState.inGame)
+        {
+            return;
+        }
         state = GameState.inGame;
         gametype = type;
         currNPC = npc;
@@ -50,7 +54,6 @@ public class MinigameManager : MonoBehaviour
 
     public void EndMinigame(bool success)
     {
-        state = GameState.idle;
         if (currNPC != null)
         {
             currNPC.CompleteTask(gametype, success);
@@ -58,6 +61,7 @@ public class MinigameManager : MonoBehaviour
         {
             PlayerScript.instance.hasFood = true;
         }
+        state = GameState.idle;
     }
 
     public void EndMinigame(int level)

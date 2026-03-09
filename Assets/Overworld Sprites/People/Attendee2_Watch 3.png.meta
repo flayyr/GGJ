@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: bb09aa612774e4374981b13dd8904a5c
+guid: 719e688162cc54b25be12ec67494f420
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4644634714054586545
-    second: OverworldFurniture_0
+      213: -5503332541910357068
+    second: Attendee2_Watch 3_0
   - first:
-      213: 8194139693467113753
-    second: OverworldFurniture_1
-  - first:
-      213: 293904347219263283
-    second: OverworldFurniture_2
-  - first:
-      213: 4693443363865791241
-    second: OverworldFurniture_3
-  - first:
-      213: 2733371592345131583
-    second: OverworldFurniture_4
+      213: 7621650107472543247
+    second: Attendee2_Watch 3_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,23 +116,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OverworldFurniture_0
+      name: Attendee2_Watch 3_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 148
-        width: 390
-        height: 272
+        y: 0
+        width: 30
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b0fba20aae057040800000000000000
-      internalID: 4644634714054586545
+      spriteID: 4bbe596063c30a3b0800000000000000
+      internalID: -5503332541910357068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attendee2_Watch 3_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ef73a346a85c960800000000000000
+      internalID: 7621650107472543247
       vertices: []
       indices: 
       edges: []
@@ -150,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5a6a1ea1f6dca439eaf44c5ad0a21cfa
+    spriteID: be6a0486a4c234b7497089a2db164cdd
     internalID: 0
     vertices: []
     indices: 
@@ -160,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      OverworldFurniture_0: 4644634714054586545
+      Attendee2_Watch 3_0: -5503332541910357068
+      Attendee2_Watch 3_1: 7621650107472543247
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

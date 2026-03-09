@@ -8,6 +8,7 @@ TagManager:
   - ice
   - shrimp
   - shrimpLock
+  - pitcherLock
   layers:
   - Default
   - TransparentFX

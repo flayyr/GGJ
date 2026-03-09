@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BartenderAnim
+  m_Name: Attendee5Think
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,9 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 5322661941387007901, guid: 22ac349d75e954cc78d03c34c9452e97, type: 3}
+      value: {fileID: -2217738819423220696, guid: e2214bb66cdce453a803c740b6cd061c, type: 3}
     - time: 0.5
-      value: {fileID: 8321828039440878660, guid: 22ac349d75e954cc78d03c34c9452e97, type: 3}
+      value: {fileID: -4584096172705353606, guid: e2214bb66cdce453a803c740b6cd061c, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,8 +46,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 5322661941387007901, guid: 22ac349d75e954cc78d03c34c9452e97, type: 3}
-    - {fileID: 8321828039440878660, guid: 22ac349d75e954cc78d03c34c9452e97, type: 3}
+    - {fileID: -2217738819423220696, guid: e2214bb66cdce453a803c740b6cd061c, type: 3}
+    - {fileID: -4584096172705353606, guid: e2214bb66cdce453a803c740b6cd061c, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: bb09aa612774e4374981b13dd8904a5c
+guid: 93871ed97c2ba4fa3acfd5647cb6fec7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4644634714054586545
-    second: OverworldFurniture_0
+      213: -7866173290308039830
+    second: Speak6_0
   - first:
-      213: 8194139693467113753
-    second: OverworldFurniture_1
-  - first:
-      213: 293904347219263283
-    second: OverworldFurniture_2
-  - first:
-      213: 4693443363865791241
-    second: OverworldFurniture_3
-  - first:
-      213: 2733371592345131583
-    second: OverworldFurniture_4
+      213: -6058132118804655140
+    second: Speak6_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -125,23 +116,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OverworldFurniture_0
+      name: Speak6_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 148
-        width: 390
-        height: 272
+        y: 0
+        width: 44
+        height: 55
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b0fba20aae057040800000000000000
-      internalID: 4644634714054586545
+      spriteID: a6b0689b11db5d290800000000000000
+      internalID: -7866173290308039830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speak6_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 0
+        width: 44
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd393407fe03deba0800000000000000
+      internalID: -6058132118804655140
       vertices: []
       indices: 
       edges: []
@@ -150,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5a6a1ea1f6dca439eaf44c5ad0a21cfa
+    spriteID: e9a5c90eae58d4f4d87c15e14e23075a
     internalID: 0
     vertices: []
     indices: 
@@ -160,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      OverworldFurniture_0: 4644634714054586545
+      Speak6_0: -7866173290308039830
+      Speak6_1: -6058132118804655140
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

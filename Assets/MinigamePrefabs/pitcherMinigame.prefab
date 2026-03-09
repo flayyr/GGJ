@@ -1398,6 +1398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wigglePower: 90
   followSpeed: 2
+  xPositionClamp: 0.5
 --- !u!50 &1389260302472078437
 Rigidbody2D:
   serializedVersion: 5
@@ -1769,7 +1770,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 945932513
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 10000
   m_Sprite: {fileID: 5914835523246927385, guid: faca22e5eba852e47896dabb8de212d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3328,7 +3329,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 945932513
   m_SortingLayer: 1
-  m_SortingOrder: 99
+  m_SortingOrder: 10000
   m_Sprite: {fileID: -6405752098009995145, guid: f0b5114d900ab344e84830356a0f70fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
