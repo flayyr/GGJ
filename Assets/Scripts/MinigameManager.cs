@@ -23,6 +23,10 @@ public class MinigameManager : MonoBehaviour
 
     public void StartMinigame(NPCScript npc, GameType type)
     {
+        if (state == GameState.inGame)
+        {
+            return;
+        }
         state = GameState.inGame;
         gametype = type;
         currNPC = npc;
