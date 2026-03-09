@@ -4,12 +4,15 @@ public class TableNPC : NPCScript
 {
     [SerializeField] TableScript table;
     [SerializeField] public float timeToEat;
+    [SerializeField] float munchiesIncreasePerFood;
 
-    float etiquette = 100;
-    float munchies = 100;
+    [SerializeField]float etiquette = 50;
+    [SerializeField]float munchies = 50;
+    [SerializeField] float reducedIrritationOnFoodDeliver = 10f;
 
     private void Awake()
     {
+        pointer.Hide();
         table.SetUp(this);
         irritateTimer -= Random.Range(0f, 5f);
     }
@@ -18,12 +21,21 @@ public class TableNPC : NPCScript
     {
         if (type == GameType.deliver)
         {
-            munchies += 50;
+            munchies += munchiesIncreasePerFood;
+            IncreaseIrritation(-reducedIrritationOnFoodDeliver);
         }
         else if (type == GameType.clean)
         {
             table.Clean();
+            pointer.Hide();
         }
+    }
+
+    protected override void Leave()
+    {
+        table.Clean();
+        Destroy(table);
+        base.Leave();
     }
 
     private void Update()
@@ -34,21 +46,24 @@ public class TableNPC : NPCScript
         }
         else
         {
-            etiquette += Time.deltaTime;
+            etiquette += Time.deltaTime * 0.33f;
         }
-        munchies -= Time.deltaTime;
 
-        if (munchies <= 0 || etiquette <= 0)
+        if(table.state != TableState.eating)
+            munchies -= Time.deltaTime;
+
+        if (etiquette <= 0)
         {
-            irritateTimer += Time.deltaTime;
-            if (irritateTimer > irritationThreshold)
-            {
-                Debug.Log("Too irritated, attendee leaving");
-            }
+            pointer.Show(2);
+            IncreaseIrritation(Time.deltaTime);
+        }else if(munchies <= 0)
+        {
+            pointer.Show(3);
+            IncreaseIrritation(Time.deltaTime);
         }
         else
         {
-            irritateTimer -= Time.deltaTime * 0.5f;
+            IncreaseIrritation(-Time.deltaTime * 0.5f);
             if (irritateTimer < 0)
             {
                 irritateTimer = 0;

@@ -3,8 +3,9 @@ using UnityEngine;
 public class DrinkNPC : NPCScript
 {
     [SerializeField] float baseSociability;
+    [SerializeField] int selectIndex;
 
-    public bool hasDrink;
+    [SerializeField]public bool hasDrink;
 
     bool canInteract;
 
@@ -13,6 +14,7 @@ public class DrinkNPC : NPCScript
     private void Awake()
     {
         sociability = baseSociability+Random.Range(0f,10f);
+        pointer.Hide();
     }
 
     private void Update()
@@ -23,6 +25,19 @@ public class DrinkNPC : NPCScript
         }
 
         sociability -= Time.deltaTime;
+
+        if (!hasDrink)
+        {
+            pointer.Show(0);
+        }
+        else if (sociability <= 0)
+        {
+            pointer.Show(1);
+        }
+        else
+        {
+            pointer.Hide();
+        }
     }
 
     public override void CompleteTask(GameType type, bool success)
@@ -36,7 +51,7 @@ public class DrinkNPC : NPCScript
             }
             else
             {
-                irritateTimer += 10;
+                IncreaseIrritation(10);
             }
         }
     }
@@ -47,7 +62,7 @@ public class DrinkNPC : NPCScript
         {
             if (level==0)
             {
-                irritateTimer += 10;
+                IncreaseIrritation(10);
                 sociability = baseSociability;
             }
             else if(level==1)
@@ -66,7 +81,7 @@ public class DrinkNPC : NPCScript
         {
             if (sociability<0)
             {
-                MinigameManager.instance.StartMinigame(this, GameType.chat);
+                MinigameManager.instance.StartMinigame(this, GameType.chat, selectIndex);
                 canInteract = false;
             } else if (!hasDrink)
             {

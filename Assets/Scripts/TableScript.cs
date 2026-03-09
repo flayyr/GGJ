@@ -44,6 +44,7 @@ public class TableScript : MonoBehaviour
             {
                 state = TableState.dirty;
                 spriteRenderer.sprite = dirtySprite;
+                eatingTimer = 0;
             }
         }
     }

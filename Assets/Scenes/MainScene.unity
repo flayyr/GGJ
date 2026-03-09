@@ -182,7 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f116b874fa453c141a8d0e51a499ccc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toastInterval: 90
+  toastInterval: 180
+  toastTimerText: {fileID: 0}
 --- !u!1001 &495827634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -342,6 +343,18 @@ PrefabInstance:
       propertyPath: table
       value: 
       objectReference: {fileID: 495827635}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: munchies
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: timeToEat
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: munchiesIncreasePerFood
+      value: 130
+      objectReference: {fileID: 0}
     - target: {fileID: 3990452947795247835, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
       propertyPath: m_Name
       value: TableNPC
