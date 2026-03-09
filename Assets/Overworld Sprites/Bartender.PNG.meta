@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 9eb33f5bcf9e3a94c927fef2193d4824
+guid: 22ac349d75e954cc78d03c34c9452e97
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8811530396256214671
-    second: Speak3_0
+      213: 5322661941387007901
+    second: Bartender_0
   - first:
-      213: 6091417862077659122
-    second: Speak3_1
+      213: 8321828039440878660
+    second: Bartender_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Speak3_0
+      name: Bartender_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 44
-        height: 55
+        x: 30
+        y: 11
+        width: 17
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17167934ac727b580800000000000000
-      internalID: -8811530396256214671
+      spriteID: d971dd3c5d4edd940800000000000000
+      internalID: 5322661941387007901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Speak3_1
+      name: Bartender_1
       rect:
         serializedVersion: 2
-        x: 44
-        y: 0
-        width: 44
-        height: 55
+        x: 48
+        y: 11
+        width: 17
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f7bb979540198450800000000000000
-      internalID: 6091417862077659122
+      spriteID: 44c42ccc2821d7370800000000000000
+      internalID: 8321828039440878660
       vertices: []
       indices: 
       edges: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 69b140078f64847c186d9d28d3a080ad
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Speak3_0: -8811530396256214671
-      Speak3_1: 6091417862077659122
+      Bartender_0: 5322661941387007901
+      Bartender_1: 8321828039440878660
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
