@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 56168564}
   - component: {fileID: 56168568}
   m_Layer: 0
-  m_Name: DrinkNPC
+  m_Name: NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -357,7 +357,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointer: {fileID: 1110545577}
   irritationThreshold: 30
-  baseSociability: 10
   hasDrink: 0
 --- !u!1 &63061210
 GameObject:
@@ -392,7 +391,7 @@ MonoBehaviour:
   drinkMinigame: {fileID: 5730823887893090633, guid: 8c90dbd9e1ac53a40aef879a4faef1b0, type: 3}
   cleanMinigame: {fileID: 7232467369020065374, guid: 2d392edef56fac342b8c6f582d6124c1, type: 3}
   shrimpMinigame: {fileID: 2505332069486898914, guid: 17d603c70e14e54488464c4a97b749b1, type: 3}
-  chatMinigame: {fileID: 7426274977397835924, guid: c6008813c1a561e49babad21674fe0db, type: 3}
+  chatMinigame: {fileID: 0}
   state: 0
   gametype: 0
 --- !u!4 &63061212
@@ -901,6 +900,7 @@ GameObject:
   - component: {fileID: 1086122464}
   - component: {fileID: 1086122468}
   - component: {fileID: 1086122467}
+  - component: {fileID: 1086122469}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -921,10 +921,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
-  dashAmount: 0
-  dashDuration: 0
-  dashCD: 0
-  crashDuration: 0
+  dashAmount: 3
+  dashDuration: 0.15
+  dashCD: 1
+  crashDuration: 3
+  animations:
+  - {fileID: 9100000, guid: ee493e0bd0d38c247877c14f9bf715b7, type: 2}
+  - {fileID: 9100000, guid: d1d50918cea907542a9c1457d912a8b1, type: 2}
+  - {fileID: 9100000, guid: b6d6f6d0fe370fa4180daf3ce6ed9078, type: 2}
+  - {fileID: 9100000, guid: e4235b5bde677a24e92a347485fa436a, type: 2}
+  - {fileID: 9100000, guid: 78ca5049ca13c5141ad062897ed8c700, type: 2}
+  - {fileID: 9100000, guid: e65ab89cfce321240a0dc391dde7beb5, type: 2}
+  - {fileID: 9100000, guid: 76bb26765f7327f40af5daee2c5c2054, type: 2}
   hasFood: 0
 --- !u!212 &1086122465
 SpriteRenderer:
@@ -970,8 +978,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.4198113, g: 0.7000869, b: 1, a: 1}
+  m_Sprite: {fileID: -6434985927099262582, guid: 3bfeee9c77c0bad46a03bfa2b5b2e4ac, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1031,7 +1039,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0530366, y: -0.04187106}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1041,7 +1049,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.10395986, y: 0.16537094}
   m_EdgeRadius: 0
 --- !u!50 &1086122468
 Rigidbody2D:
@@ -1070,6 +1078,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &1086122469
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086122463}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d1d50918cea907542a9c1457d912a8b1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1110545575
 GameObject:
   m_ObjectHideFlags: 0
