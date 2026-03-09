@@ -12,10 +12,6 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] float dashCD;
     [SerializeField] float crashDuration;
 
-    private Animator animator;
-    public RuntimeAnimatorController[] animations;
-    //0 - walk, 1 - idle, 2 - fall, 3 - dash, 4 - shrimp walk, 5 - shrimp idle, 6 - shrimp dash
-
     [HideInInspector]public bool hasFood;
 
     bool dashing;
@@ -24,11 +20,16 @@ public class PlayerScript : MonoBehaviour
     Vector2 prevMoveDir;
 
     Rigidbody2D rb;
+    SpriteRenderer sprender;
+    private Animator animator;
+    public RuntimeAnimatorController[] animations;
+    //0 - walk, 1 - idle, 2 - fall, 3 - dash, 4 - shrimp walk, 5 - shrimp idle, 6 - shrimp dash
 
     private void Awake()
     {
         instance = this;
         rb = GetComponent<Rigidbody2D>();
+        sprender = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
 
@@ -42,38 +43,127 @@ public class PlayerScript : MonoBehaviour
         }
 
         Vector2 moveDir = Vector2.zero;
+
+        if (!Input.anyKey && !dashing)
+        {
+            if (!hasFood)
+            {
+                animator.runtimeAnimatorController = animations[1];
+            }
+            else if (hasFood)
+            {
+                animator.runtimeAnimatorController = animations[5];
+            }
+        }
+
+        if (Input.GetKey(KeyCode.LeftShift) && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)))
+        {
+            if (dashing)
+            {
+                if (!hasFood)
+                {
+                    animator.runtimeAnimatorController = animations[3];
+                }
+                else if (hasFood)
+                {
+                    animator.runtimeAnimatorController = animations[6];
+                }
+            }
+        }else if (Input.GetKey(KeyCode.LeftShift)){
+            if (dashing)
+            {
+                if (!hasFood)
+                {
+                    animator.runtimeAnimatorController = animations[3];
+                }
+                else if (hasFood)
+                {
+                    animator.runtimeAnimatorController = animations[6];
+                }
+            }
+        }
+
         if (Input.GetKey(KeyCode.A))
         {
             moveDir += Vector2.left;
-            animator.runtimeAnimatorController = animations[0];
+            if (!dashing && moveDir != Vector2.zero)
+            {
+                if (!hasFood)
+                {
+                    animator.runtimeAnimatorController = animations[0];
+                }
+                else if (hasFood)
+                {
+                    animator.runtimeAnimatorController = animations[4];
+                }
+            }
         }
         if (Input.GetKey(KeyCode.D))
         {
             moveDir += Vector2.right;
-            animator.runtimeAnimatorController = animations[0];
+            if (!dashing && moveDir != Vector2.zero)
+            {
+                if (!hasFood)
+                {
+                    animator.runtimeAnimatorController = animations[0];
+                }
+                else if (hasFood)
+                {
+                    animator.runtimeAnimatorController = animations[4];
+                }
+            }
         }
         if (Input.GetKey(KeyCode.W))
         {
             moveDir += Vector2.up;
-            animator.runtimeAnimatorController = animations[0];
+            if (!dashing && moveDir != Vector2.zero)
+            {
+                if (!hasFood)
+                {
+                    animator.runtimeAnimatorController = animations[0];
+                }
+                else if (hasFood)
+                {
+                    animator.runtimeAnimatorController = animations[4];
+                }
+            }
         }
         if (Input.GetKey(KeyCode.S))
         {
             moveDir += Vector2.down;
-            animator.runtimeAnimatorController = animations[0];
+            if (!dashing && moveDir != Vector2.zero)
+            {
+                if (!hasFood)
+                {
+                    animator.runtimeAnimatorController = animations[0];
+                }
+                else if (hasFood)
+                {
+                    animator.runtimeAnimatorController = animations[4];
+                }
+            }
         }
 
         moveDir = moveDir.normalized;
 
         if (moveDir != Vector2.zero)
         {
-            prevMoveDir= moveDir;
+            prevMoveDir = moveDir;
         }
 
+        //flips sprite when facing directions
+        if(prevMoveDir == Vector2.right)
+        {
+            sprender.flipX = true;
+        }
+        else if(prevMoveDir == Vector2.left)
+        {
+            sprender.flipX = false;
+        }
 
         dashTimer -= Time.deltaTime;
 
-        if (!dashing && dashTimer<0 && Input.GetKeyDown(KeyCode.LeftShift))
+        if (!dashing && dashTimer < 0 && Input.GetKeyDown(KeyCode.LeftShift))
         {
             dashing = true;
             rb.linearVelocity = prevMoveDir * moveSpeed * dashAmount;
@@ -82,7 +172,6 @@ public class PlayerScript : MonoBehaviour
 
         if (dashing)
         {
-            animator.runtimeAnimatorController = animations[2];
             if (dashTimer < 0)
             {
                 dashing = false;
@@ -100,6 +189,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (dashing)
         {
+            animator.runtimeAnimatorController = animations[2];
             crashTimer = crashDuration;
         }
     }
