@@ -1398,7 +1398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wigglePower: 90
   followSpeed: 2
-  noFollow: 0
+  xPositionClamp: 0.5
 --- !u!50 &1389260302472078437
 Rigidbody2D:
   serializedVersion: 5

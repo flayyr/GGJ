@@ -2092,6 +2092,7 @@ MonoBehaviour:
   winCard: {fileID: 1281403355406198984}
   timer: 2
   parentPrefab: {fileID: 3611858419633989893}
+  softlockTimer: 30
   score: 0
   child: {fileID: 7570777392809578274}
   pinched: 0
