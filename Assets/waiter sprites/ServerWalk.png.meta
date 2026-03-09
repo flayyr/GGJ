@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,6 +105,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -112,9 +125,9 @@ TextureImporter:
       name: ServerWalk_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 27
+        width: 30
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -134,9 +147,9 @@ TextureImporter:
       name: ServerWalk_1
       rect:
         serializedVersion: 2
-        x: 31
+        x: 30
         y: 0
-        width: 27
+        width: 30
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -156,9 +169,9 @@ TextureImporter:
       name: ServerWalk_2
       rect:
         serializedVersion: 2
-        x: 61
+        x: 60
         y: 0
-        width: 27
+        width: 30
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -178,9 +191,9 @@ TextureImporter:
       name: ServerWalk_3
       rect:
         serializedVersion: 2
-        x: 91
+        x: 90
         y: 0
-        width: 27
+        width: 30
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -200,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ff0d7140a6d80437fb2ba29e40b64595
     internalID: 0
     vertices: []
     indices: 
