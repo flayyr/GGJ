@@ -12,7 +12,7 @@ public class DrinkNPC : NPCScript
 
     private void Awake()
     {
-        sociability = baseSociability+Random.Range(0,10);
+        sociability = baseSociability+Random.Range(0f,10f);
     }
 
     private void Update()
