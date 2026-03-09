@@ -19,7 +19,7 @@ public class TableWiping : MonoBehaviour
         dist += (transform.position - prevPos).magnitude;
         prevPos = transform.position;
 
-        if (dist >= 300)
+        if (dist >= wipeAmount)
         {
             parent.exit = true;
         }

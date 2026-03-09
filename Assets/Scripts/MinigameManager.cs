@@ -9,6 +9,7 @@ public class MinigameManager : MonoBehaviour
 
     [SerializeField] minigameExit drinkMinigame;
     [SerializeField] minigameExit cleanMinigame;
+    [SerializeField] minigameExit shrimpMinigame;
 
     [HideInInspector] public GameState state = GameState.idle;
     [HideInInspector] public GameType gametype = GameType.none;
@@ -38,7 +39,7 @@ public class MinigameManager : MonoBehaviour
         }
         else if (type == GameType.food)
         {
-            //Instantiate(foodMinigame);
+            Instantiate(shrimpMinigame);
         }
     }
 

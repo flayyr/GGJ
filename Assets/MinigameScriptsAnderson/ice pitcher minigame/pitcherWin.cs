@@ -30,6 +30,7 @@ public class pitcherWin : MonoBehaviour
             if (!loseCard.activeInHierarchy)
             {
                 loseCard.SetActive(true);
+                parentPrefab.GetComponent<minigameExit>().win = false;
             }
         }
 
@@ -48,7 +49,7 @@ public class pitcherWin : MonoBehaviour
             if (!parentPrefab.GetComponent<minigameExit>().exit)
             {
                 parentPrefab.GetComponent<minigameExit>().exit = true;
-                parentPrefab.GetComponent<minigameExit>().win = false;
+                
             }
         }
 

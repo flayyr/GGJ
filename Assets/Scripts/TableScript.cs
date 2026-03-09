@@ -3,13 +3,13 @@ using UnityEngine;
 public enum TableState { clean, eating, dirty }
 public class TableScript : MonoBehaviour
 {
-    NPCScript attendee;
+    TableNPC attendee;
     bool canInteract;
     float eatingTimer;
 
     public TableState state = TableState.clean;
 
-    public void SetUp(NPCScript attendee)
+    public void SetUp(TableNPC attendee)
     {
         this.attendee = attendee;
     }
@@ -50,6 +50,13 @@ public class TableScript : MonoBehaviour
         if (collision.tag == "Player" && MinigameManager.instance.state == GameState.idle)
         {
             canInteract = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            canInteract = false;
         }
     }
 }
