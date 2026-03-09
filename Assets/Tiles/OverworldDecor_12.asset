@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Tiles_8
+  m_Name: OverworldDecor_12
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -1901503930, guid: d2cab9fe70a0540aead2e410a94c1344, type: 3}
+  m_Sprite: {fileID: -1144481184, guid: 3e602eb0c3959457886c9f5d9596e483, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
