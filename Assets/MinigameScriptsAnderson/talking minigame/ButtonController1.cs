@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,7 @@ public class ButtonController1 : MonoBehaviour
     [SerializeField] Button[] buttons;
     [SerializeField] minigameExit parent;
     [SerializeField] redTextController redTextController;
+    [SerializeField] TextMeshProUGUI matchText;
 
     int prevButton = -1;
     int progress = 0;
@@ -23,6 +25,7 @@ public class ButtonController1 : MonoBehaviour
     {
         redTextController.select = index;
         redTextController.SetUp();
+        matchText.text = redTextController.sansWords[index];
     }
 
     private void Swap(Transform a, Transform b)
