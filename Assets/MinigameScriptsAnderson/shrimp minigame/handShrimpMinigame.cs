@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class handShrimpMinigame : MonoBehaviour
 {
-
     public Sprite grabbed;
     public Sprite openHand;
 
@@ -18,11 +17,8 @@ public class handShrimpMinigame : MonoBehaviour
 
     private GameObject closestShrimp;
 
-    private int shrimpsLocked;
-
     public GameObject child;
 
-    //[SerializeField] private bool pickedUp = false;
     [SerializeField] private bool pinched = false;
 
     private Vector2 mousePos;
@@ -90,7 +86,10 @@ public class handShrimpMinigame : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.MovePosition(mousePos);
+        if (!winCard.activeInHierarchy)
+        {
+            rb.MovePosition(mousePos);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
