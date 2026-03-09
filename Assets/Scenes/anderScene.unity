@@ -436,6 +436,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c63a6ad155a7214b8044802b88ab2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bobAmount: 0
+  bobFrequency: 0
   sceneToGoTo: Overworld
 --- !u!1 &423751128
 GameObject:
@@ -662,6 +664,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c63a6ad155a7214b8044802b88ab2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bobAmount: 0.2
+  bobFrequency: 2
   sceneToGoTo: Overworld
 --- !u!1 &1243489283
 GameObject:
@@ -954,6 +958,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c63a6ad155a7214b8044802b88ab2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bobAmount: 0
+  bobFrequency: 0
   sceneToGoTo: Overworld
 --- !u!114 &1541447443
 MonoBehaviour:
