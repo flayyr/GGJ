@@ -32,6 +32,7 @@ public class DrinkNPC : NPCScript
             if (success)
             {
                 hasDrink = true;
+                canInteract = false;
             }
             else
             {
@@ -70,6 +71,10 @@ public class DrinkNPC : NPCScript
             if (!hasDrink)
             {
                 canInteract = true;
+            }
+            else
+            {
+                canInteract = false;
             }
         }
     }
