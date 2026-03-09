@@ -6,6 +6,7 @@ public class EndScreenScore : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
     private void Start()
     {
+        FadeToWhite.instance.FadeIn();
         int attendeesLeft = AttendeeManager.instance.attendeesLeft;
 
         if(attendeesLeft<=0)
