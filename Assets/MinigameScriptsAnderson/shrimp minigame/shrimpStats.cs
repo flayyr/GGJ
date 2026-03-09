@@ -48,6 +48,7 @@ public class shrimpStats : MonoBehaviour
             rotatable = false;
             other.gameObject.GetComponent<shrimpLock>().occupied = true;
             locked = true;
+            GetComponent<Collider2D>().enabled = false;
             rb.transform.rotation = Quaternion.Euler(0, 0, other.gameObject.GetComponent<shrimpLock>().angle);
             if (!added)
             {
