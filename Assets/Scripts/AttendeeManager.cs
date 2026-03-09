@@ -19,7 +19,8 @@ public class AttendeeManager : MonoBehaviour
     private void Update()
     {
         toastTimer-=Time.deltaTime;
-        toastTimerText.text = "Next Toast: "+Mathf.CeilToInt(toastTimer);
+        if(toastTimerText!=null)
+            toastTimerText.text = "Next Toast: "+Mathf.CeilToInt(toastTimer);
         if (toastTimer <= 0)
         {
             foreach (DrinkNPC attendee in attendees)
