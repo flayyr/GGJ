@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: bb09aa612774e4374981b13dd8904a5c
+guid: a9100fe868c544b168545be852f9bf87
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4644634714054586545
-    second: OverworldFurniture_0
-  - first:
-      213: 8194139693467113753
-    second: OverworldFurniture_1
-  - first:
-      213: 293904347219263283
-    second: OverworldFurniture_2
-  - first:
-      213: 4693443363865791241
-    second: OverworldFurniture_3
-  - first:
-      213: 2733371592345131583
-    second: OverworldFurniture_4
+      213: 5940755558916410623
+    second: PlatterCocktail_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OverworldFurniture_0
+      name: PlatterCocktail_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 148
-        width: 390
-        height: 272
+        x: 1
+        y: 1
+        width: 38
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b0fba20aae057040800000000000000
-      internalID: 4644634714054586545
+      spriteID: ffcc3a294bdc17250800000000000000
+      internalID: 5940755558916410623
       vertices: []
       indices: 
       edges: []
@@ -150,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5a6a1ea1f6dca439eaf44c5ad0a21cfa
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      OverworldFurniture_0: 4644634714054586545
+      PlatterCocktail_0: 5940755558916410623
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
