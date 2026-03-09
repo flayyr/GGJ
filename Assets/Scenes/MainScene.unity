@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 56168564}
   - component: {fileID: 56168568}
   m_Layer: 0
-  m_Name: NPC
+  m_Name: DrinkNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -357,6 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointer: {fileID: 1110545577}
   irritationThreshold: 30
+  baseSociability: 10
   hasDrink: 0
 --- !u!1 &63061210
 GameObject:
@@ -391,7 +392,7 @@ MonoBehaviour:
   drinkMinigame: {fileID: 5730823887893090633, guid: 8c90dbd9e1ac53a40aef879a4faef1b0, type: 3}
   cleanMinigame: {fileID: 7232467369020065374, guid: 2d392edef56fac342b8c6f582d6124c1, type: 3}
   shrimpMinigame: {fileID: 2505332069486898914, guid: 17d603c70e14e54488464c4a97b749b1, type: 3}
-  chatMinigame: {fileID: 0}
+  chatMinigame: {fileID: 7426274977397835924, guid: c6008813c1a561e49babad21674fe0db, type: 3}
   state: 0
   gametype: 0
 --- !u!4 &63061212
@@ -920,10 +921,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
-  dashAmount: 3
-  dashDuration: 0.15
-  dashCD: 1
-  crashDuration: 3
+  dashAmount: 0
+  dashDuration: 0
+  dashCD: 0
+  crashDuration: 0
   hasFood: 0
 --- !u!212 &1086122465
 SpriteRenderer:

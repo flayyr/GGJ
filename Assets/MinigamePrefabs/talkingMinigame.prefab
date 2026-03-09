@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -511.05, y: -287.5}
+  m_AnchoredPosition: {x: -509.83, y: -286.68}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3287333342124263872
@@ -120,7 +120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4364163788891505047}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6235020859845665533}
+        m_TargetAssemblyTypeName: ButtonController1, Assembly-CSharp
+        m_MethodName: Match
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &142512353417509739
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,7 +198,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Matching
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ade4d863b7a237a47a60d10d5bf6ecc1, type: 2}
   m_sharedMaterial: {fileID: 5418828021113677032, guid: ade4d863b7a237a47a60d10d5bf6ecc1, type: 2}
@@ -195,8 +207,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -283,7 +295,7 @@ Transform:
   m_GameObject: {fileID: 261336070417101611}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5131747, y: -0.7794844, z: -0.73852617}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 11.5, y: 11.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -372,7 +384,7 @@ Transform:
   m_GameObject: {fileID: 2035158478397527337}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0268254, y: -2.1094844, z: -0.73852617}
+  m_LocalPosition: {x: 5.9, y: -1.61, z: -0.73852617}
   m_LocalScale: {x: 13, y: 13, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -506,7 +518,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -510.28, y: -283.97}
+  m_AnchoredPosition: {x: -509.96, y: -283.05}
   m_SizeDelta: {x: 11.7276, y: 5.9566}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3449437477547739903
@@ -626,7 +638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6033255338855717169}
   - component: {fileID: 7426274977397835924}
-  - component: {fileID: 8001128229568744890}
+  - component: {fileID: 6235020859845665533}
   m_Layer: 0
   m_Name: talkingMinigame
   m_TagString: Untagged
@@ -668,7 +680,7 @@ MonoBehaviour:
   killXOffset: -19
   win: 1
   exit: 0
---- !u!114 &8001128229568744890
+--- !u!114 &6235020859845665533
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -677,9 +689,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3517537556720754446}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c51dbf7bc3edd34aaa8503b1f5652eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 234e5bb1da1014a44be640103f2068cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 2370756503787016431}
+  - {fileID: 2137744658246632778}
+  - {fileID: 7178621238480930265}
+  parent: {fileID: 7426274977397835924}
 --- !u!1 &4353781451382525531
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,7 +724,7 @@ Transform:
   m_GameObject: {fileID: 4353781451382525531}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.116825, y: -2.1694844, z: -0.73852617}
+  m_LocalPosition: {x: 5.99, y: -1.67, z: -0.73852617}
   m_LocalScale: {x: 11, y: 13.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -825,7 +842,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -503.98, y: -282.42}
+  m_AnchoredPosition: {x: -503.66, y: -281.5}
   m_SizeDelta: {x: 9.6266, y: 1.5101}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5694954854256610136
@@ -981,7 +998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -511.05, y: -289.78998}
+  m_AnchoredPosition: {x: -509.83, y: -288.96997}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6361786261734099722
@@ -1065,7 +1082,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1745300045518192453}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6235020859845665533}
+        m_TargetAssemblyTypeName: ButtonController1, Assembly-CSharp
+        m_MethodName: RunAway
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6680783590659394051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,7 +1160,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Run Away
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ade4d863b7a237a47a60d10d5bf6ecc1, type: 2}
   m_sharedMaterial: {fileID: 5418828021113677032, guid: ade4d863b7a237a47a60d10d5bf6ecc1, type: 2}
@@ -1344,7 +1373,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -511.05, y: -288.62}
+  m_AnchoredPosition: {x: -509.83, y: -287.8}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4724259381030120077
@@ -1428,7 +1457,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8018630317900052243}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6235020859845665533}
+        m_TargetAssemblyTypeName: ButtonController1, Assembly-CSharp
+        m_MethodName: NonCommit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8033945497135274126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,7 +1535,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Non-Commital
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ade4d863b7a237a47a60d10d5bf6ecc1, type: 2}
   m_sharedMaterial: {fileID: 5418828021113677032, guid: ade4d863b7a237a47a60d10d5bf6ecc1, type: 2}
