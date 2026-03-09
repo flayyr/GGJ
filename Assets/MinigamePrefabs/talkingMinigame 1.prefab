@@ -640,7 +640,7 @@ GameObject:
   - component: {fileID: 7426274977397835924}
   - component: {fileID: 6235020859845665533}
   m_Layer: 0
-  m_Name: talkingMinigame
+  m_Name: talkingMinigame 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

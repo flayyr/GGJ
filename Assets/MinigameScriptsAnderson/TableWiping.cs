@@ -44,7 +44,7 @@ public class TableWiping : MonoBehaviour
         stain2.GetComponent<SpriteRenderer>().material.color = tempColor1;
         stain3.GetComponent<SpriteRenderer>().material.color = tempColor1;
 
-        tempColor1.a = Mathf.Abs((255 - dist) / 255);
+        tempColor1.a = Mathf.Abs((wipeAmount - dist) / wipeAmount);
 
         if (winCard.activeInHierarchy)
         {

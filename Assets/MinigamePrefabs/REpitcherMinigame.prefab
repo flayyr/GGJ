@@ -3953,7 +3953,7 @@ GameObject:
   - component: {fileID: 7867582374633711453}
   - component: {fileID: 5730823887893090633}
   m_Layer: 3
-  m_Name: pitcherMinigame
+  m_Name: REpitcherMinigame
   m_TagString: minigame
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3969,7 +3969,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2429403849522394153}
@@ -4003,7 +4003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0025985ab36c7c64b8b8d6743f160e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killXOffset: -18
+  killXOffset: -5
   win: 1
   exit: 0
 --- !u!1 &7130398336751147491
