@@ -70,6 +70,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 38169efd90839864f82c8268c8eb0f86, type: 3}
   - {fileID: 8300000, guid: 61c6e0e508ba3144e8a2e69e1bbdbc78, type: 3}
   - {fileID: 8300000, guid: c768e03db00a2b84da4c09c5250995a5, type: 3}
+  placeShrimpSuccess:
   - {fileID: 8300000, guid: a1e024e2e37192443bb8c6f05ce05fe6, type: 3}
   - {fileID: 8300000, guid: 5c25bc440102cf449a3cfd2247b3407c, type: 3}
   - {fileID: 8300000, guid: 3f654dca43285ad45b1b5a085f30a011, type: 3}

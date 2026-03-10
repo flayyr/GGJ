@@ -9,6 +9,7 @@ public class SFXManager : MonoBehaviour
     [SerializeField] public AudioClip[] footsteps;
     [SerializeField] public AudioClip[] grabShrimp;
     [SerializeField] public AudioClip[] placeShrimp;
+    [SerializeField] public AudioClip[] placeShrimpSuccess;
     [SerializeField] public AudioClip[] iceClink;
     [SerializeField] public AudioClip[] menuPress;
     [SerializeField] public AudioClip[] menuSelect;
