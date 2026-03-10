@@ -11,6 +11,9 @@ public class AttendeeManager : MonoBehaviour
 
     [HideInInspector]public int attendeesLeft = 0;
 
+    public int irritatedCount;
+    public bool closeToToast;
+
     DrinkNPC[] attendees;
 
     float toastTimer;
@@ -36,6 +39,9 @@ public class AttendeeManager : MonoBehaviour
     private void Update()
     {
         toastTimer-=Time.deltaTime;
+
+        closeToToast = toastTimer<60 && currToast<toastIntervals.Length;
+
         if (toastTimerText != null)
         {
             if (currToast == toastIntervals.Length)
@@ -63,7 +69,7 @@ public class AttendeeManager : MonoBehaviour
 
                 if (!attendee.hasDrink)
                 {
-                    attendee.IncreaseIrritation(10);
+                    attendee.IncreaseIrritation(20);
                 }
                 else
                 {

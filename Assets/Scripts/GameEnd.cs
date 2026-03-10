@@ -26,6 +26,7 @@ public class GameEnd : MonoBehaviour
 
     public void EndGame()
     {
+        MinigameManager.instance.EndMinigame(true);
         FadeToWhite.instance.FadeOut();
     }
 }

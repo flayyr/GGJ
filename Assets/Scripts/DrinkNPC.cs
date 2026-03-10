@@ -71,6 +71,7 @@ public class DrinkNPC : NPCScript
             } else
             {
                 sociability = baseSociability * 2f;
+                IncreaseIrritation(-5);
             }
         }
     }

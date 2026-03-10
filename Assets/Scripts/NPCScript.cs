@@ -18,6 +18,15 @@ public class NPCScript : MonoBehaviour
 
     public void IncreaseIrritation(float amount)
     {
+        if (irritateTimer >= 20 && irritateTimer + amount < 20)
+        {
+            AttendeeManager.instance.irritatedCount--;
+        }
+        else if(irritateTimer<20 && irritateTimer + amount >= 20)
+        {
+            AttendeeManager.instance.irritatedCount++;
+        }
+            
         irritateTimer += amount;
         spriteRenderer.color = new Color(1f, 1f - (irritateTimer / irritationThreshold), 1f - (irritateTimer / irritationThreshold), 1f);
 
