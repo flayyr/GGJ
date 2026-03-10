@@ -64,6 +64,10 @@ public class AttendeeManager : MonoBehaviour
         }
         if (toastTimer <= 0)
         {
+            if(currToast == toastIntervals.Length)
+            {
+                return;
+            }
             foreach (DrinkNPC attendee in attendees)
             {
                 if(attendee==null) continue;
@@ -82,8 +86,9 @@ public class AttendeeManager : MonoBehaviour
             SFXManager.instance.PlaySound(SFXManager.instance.toast);
             
             currToast++;
-            if(currToast<toastIntervals.Length)
+            if (currToast < toastIntervals.Length)
                 toastTimer = toastIntervals[currToast];
+            
             if (currToast == toastIntervals.Length)
             {
                 GameEnd.instance.finalTimerLength = endingTimeLength;

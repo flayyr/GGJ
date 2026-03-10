@@ -20,6 +20,7 @@ public class GameEnd : MonoBehaviour
             if (timer > finalTimerLength)
             {
                 EndGame();
+                ending = false;
             }
         }
     }
