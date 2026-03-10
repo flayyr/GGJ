@@ -138,19 +138,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -160,8 +147,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 160
-        height: 90
+        width: 69
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,10 +167,10 @@ TextureImporter:
       name: S_1
       rect:
         serializedVersion: 2
-        x: 160
+        x: 69
         y: 0
-        width: 160
-        height: 90
+        width: 69
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +189,10 @@ TextureImporter:
       name: S_2
       rect:
         serializedVersion: 2
-        x: 320
+        x: 138
         y: 0
-        width: 160
-        height: 90
+        width: 69
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,10 +211,10 @@ TextureImporter:
       name: S_3
       rect:
         serializedVersion: 2
-        x: 480
+        x: 207
         y: 0
-        width: 160
-        height: 90
+        width: 69
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,10 +233,10 @@ TextureImporter:
       name: S_4
       rect:
         serializedVersion: 2
-        x: 640
+        x: 276
         y: 0
-        width: 160
-        height: 90
+        width: 69
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +255,10 @@ TextureImporter:
       name: S_5
       rect:
         serializedVersion: 2
-        x: 800
+        x: 345
         y: 0
-        width: 160
-        height: 90
+        width: 69
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +277,10 @@ TextureImporter:
       name: S_6
       rect:
         serializedVersion: 2
-        x: 960
+        x: 414
         y: 0
-        width: 160
-        height: 90
+        width: 69
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,7 +299,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: dc6f18c869d7141c8a50f5f779886ffb
+    spriteID: 1933247a02cac2843b14b78309263b02
     internalID: 0
     vertices: []
     indices: 
