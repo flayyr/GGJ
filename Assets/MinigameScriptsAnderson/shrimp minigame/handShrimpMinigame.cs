@@ -8,6 +8,7 @@ public class handShrimpMinigame : MonoBehaviour
     public Sprite openHand;
 
     public GameObject winCard;
+    public GameObject loseCard;
 
     public float timer = 2f;
 
@@ -64,7 +65,7 @@ public class handShrimpMinigame : MonoBehaviour
         softlockTimer -= Time.deltaTime;
 
         //handles win condition
-        if(score >= 8 || softlockTimer <= 0)
+        if(score >= 8)
         {
             if (!winCard.activeInHierarchy)
             {
@@ -72,7 +73,15 @@ public class handShrimpMinigame : MonoBehaviour
             }
         }
 
-        if (winCard.activeInHierarchy)
+        if(softlockTimer <= 0)
+        {
+            if (!loseCard.activeInHierarchy)
+            {
+                loseCard.SetActive(true);
+            }
+        }
+
+        if (winCard.activeInHierarchy || loseCard.activeInHierarchy)
         {
             timer -= 1f * Time.deltaTime;
         }
