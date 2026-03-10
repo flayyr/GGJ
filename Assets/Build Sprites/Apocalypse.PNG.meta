@@ -149,10 +149,10 @@ TextureImporter:
       name: Apocalypse_0
       rect:
         serializedVersion: 2
-        x: 632
-        y: 2077
-        width: 481
-        height: 484
+        x: 0
+        y: 0
+        width: 3000
+        height: 3000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,253 +167,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Apocalypse_1
-      rect:
-        serializedVersion: 2
-        x: 911
-        y: 1131
-        width: 1457
-        height: 1215
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 153b86c1831a53b30800000000000000
-      internalID: 4266493484370277201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apocalypse_2
-      rect:
-        serializedVersion: 2
-        x: 618
-        y: 775
-        width: 188
-        height: 183
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 47ecba659fb621190800000000000000
-      internalID: -7993207669984080268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apocalypse_3
-      rect:
-        serializedVersion: 2
-        x: 839
-        y: 775
-        width: 120
-        height: 154
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c969c9638af3be5f0800000000000000
-      internalID: -726416923186915684
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apocalypse_4
-      rect:
-        serializedVersion: 2
-        x: 1004
-        y: 771
-        width: 173
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1f544a513fb59acf0800000000000000
-      internalID: -240560005489342991
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apocalypse_5
-      rect:
-        serializedVersion: 2
-        x: 1224
-        y: 771
-        width: 158
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b0dd77049d3b4880800000000000000
-      internalID: -8625732955307913033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apocalypse_6
-      rect:
-        serializedVersion: 2
-        x: 1413
-        y: 775
-        width: 173
-        height: 157
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f52aee95be5bc39c0800000000000000
-      internalID: -3946079151052643745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apocalypse_7
-      rect:
-        serializedVersion: 2
-        x: 1621
-        y: 775
-        width: 120
-        height: 154
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 754abaf2f6fb7a610800000000000000
-      internalID: 1632483874207147095
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apocalypse_8
-      rect:
-        serializedVersion: 2
-        x: 1741
-        y: 775
-        width: 167
-        height: 154
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b7ea40987df4e8870800000000000000
-      internalID: 8686968518379613819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apocalypse_9
-      rect:
-        serializedVersion: 2
-        x: 1942
-        y: 775
-        width: 120
-        height: 154
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aec9140c1a16f12b0800000000000000
-      internalID: -5611659263337194262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apocalypse_10
-      rect:
-        serializedVersion: 2
-        x: 2107
-        y: 771
-        width: 92
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2407a4122593d8770800000000000000
-      internalID: 8614604687138254914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Apocalypse_11
-      rect:
-        serializedVersion: 2
-        x: 2249
-        y: 775
-        width: 120
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc90a124cddfbf690800000000000000
-      internalID: -7567175626422351412
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cac2fae35dfc9e744a337ebf7afa9950
     internalID: 0
     vertices: []
     indices: 
@@ -424,17 +182,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Apocalypse_0: -4118779490152704044
-      Apocalypse_1: 4266493484370277201
-      Apocalypse_10: 8614604687138254914
-      Apocalypse_11: -7567175626422351412
-      Apocalypse_2: -7993207669984080268
-      Apocalypse_3: -726416923186915684
-      Apocalypse_4: -240560005489342991
-      Apocalypse_5: -8625732955307913033
-      Apocalypse_6: -3946079151052643745
-      Apocalypse_7: 1632483874207147095
-      Apocalypse_8: 8686968518379613819
-      Apocalypse_9: -5611659263337194262
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
