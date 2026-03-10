@@ -699,6 +699,7 @@ MonoBehaviour:
   parent: {fileID: 7426274977397835924}
   redTextController: {fileID: 6731537454344464792}
   matchText: {fileID: 8726408249973438347}
+  talkSoundInterval: 0.12
 --- !u!1 &4353781451382525531
 GameObject:
   m_ObjectHideFlags: 0

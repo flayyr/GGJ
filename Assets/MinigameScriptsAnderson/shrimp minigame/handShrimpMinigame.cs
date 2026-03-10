@@ -114,6 +114,10 @@ public class handShrimpMinigame : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
+        if (Input.GetMouseButtonDown(0) && closestShrimp != null && !closestShrimp.GetComponent<shrimpStats>().locked)
+        {
+            SFXManager.instance.PlaySound(SFXManager.instance.grabShrimp);
+        }
         if (Input.GetMouseButton(0) && closestShrimp != null && !closestShrimp.GetComponent<shrimpStats>().locked)
         {
             closestShrimp.GetComponent<Rigidbody2D>().transform.position = rb.transform.position;

@@ -24,4 +24,9 @@ public class iceDeletion : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        SFXManager.instance.PlaySound(SFXManager.instance.iceClink);
+    }
 }
