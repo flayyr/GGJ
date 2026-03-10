@@ -4929,6 +4929,10 @@ PrefabInstance:
       propertyPath: moneyMan
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3589382343458244052, guid: 269c1405d03466a4f899e27509f8fc42, type: 3}
+      propertyPath: selectIndex
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3927324170315109714, guid: 269c1405d03466a4f899e27509f8fc42, type: 3}
       propertyPath: m_Sprite
       value: 
