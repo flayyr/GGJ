@@ -9,11 +9,16 @@ public class TableNPC : NPCScript
     [SerializeField]float etiquette = 50;
     [SerializeField]float munchies = 50;
     [SerializeField] float reducedIrritationOnFoodDeliver = 10f;
+    [SerializeField] RuntimeAnimatorController IdleAnimator;
+    [SerializeField] RuntimeAnimatorController EatingAnimator;
+
+    private Animator animator;
 
     private void Awake()
     {
         pointer.Hide();
         table.SetUp(this);
+        animator = GetComponent<Animator>();
         irritateTimer -= Random.Range(0f, 5f);
     }
 
@@ -61,9 +66,20 @@ public class TableNPC : NPCScript
         if (table.state != TableState.eating)
         {
             munchies -= Time.deltaTime;
+            if(animator.runtimeAnimatorController != IdleAnimator)
+            {
+                animator.runtimeAnimatorController = IdleAnimator;
+            }
             if(munchies < 0)
             {
                 munchies = 0;
+            }
+        }
+
+        if(table.state==TableState.eating){
+            if(animator.runtimeAnimatorController != EatingAnimator)
+            {
+                animator.runtimeAnimatorController = EatingAnimator;
             }
         }
 

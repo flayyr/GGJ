@@ -5566,6 +5566,18 @@ PrefabInstance:
       propertyPath: table
       value: 
       objectReference: {fileID: 55144038}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: NPCAnimator
+      value: 
+      objectReference: {fileID: 771216122}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: IdleAnimator
+      value: 
+      objectReference: {fileID: 9100000, guid: d113121dc79754797bf0b90b6be4157d, type: 2}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: EatingAnimator
+      value: 
+      objectReference: {fileID: 9100000, guid: 7c4580d5958b04e97ae13086929cd3f7, type: 2}
     - target: {fileID: 3990452947795247835, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
       propertyPath: m_Name
       value: SittingNPC (0)
@@ -5634,6 +5646,11 @@ PrefabInstance:
 --- !u!4 &771216121 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6677124499484067587, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+  m_PrefabInstance: {fileID: 771216120}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &771216122 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -8690339802555836800, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
   m_PrefabInstance: {fileID: 771216120}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &775141943
@@ -6307,6 +6324,18 @@ PrefabInstance:
       propertyPath: table
       value: 
       objectReference: {fileID: 1158161579}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: NPCAnimator
+      value: 
+      objectReference: {fileID: 1494878025}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: IdleAnimator
+      value: 
+      objectReference: {fileID: 9100000, guid: 2cab52d082a824b5192a03b328e3f43c, type: 2}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: EatingAnimator
+      value: 
+      objectReference: {fileID: 9100000, guid: 76835c04753b4442fa101588e0103dde, type: 2}
     - target: {fileID: 3990452947795247835, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
       propertyPath: m_Name
       value: SittingNPC (2)
@@ -6536,6 +6565,18 @@ PrefabInstance:
       propertyPath: table
       value: 
       objectReference: {fileID: 2050936981}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: NPCAnimator
+      value: 
+      objectReference: {fileID: 1021026186}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: IdleAnimator
+      value: 
+      objectReference: {fileID: 9100000, guid: 2cab52d082a824b5192a03b328e3f43c, type: 2}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: EatingAnimator
+      value: 
+      objectReference: {fileID: 9100000, guid: 76835c04753b4442fa101588e0103dde, type: 2}
     - target: {fileID: 3990452947795247835, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
       propertyPath: m_Name
       value: SittingNPC (3)
@@ -6616,6 +6657,11 @@ PrefabInstance:
 --- !u!4 &1021026185 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6677124499484067587, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+  m_PrefabInstance: {fileID: 1021026184}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1021026186 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -8690339802555836800, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
   m_PrefabInstance: {fileID: 1021026184}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1078790949
@@ -7976,6 +8022,18 @@ PrefabInstance:
       propertyPath: table
       value: 
       objectReference: {fileID: 268410178}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: NPCAnimator
+      value: 
+      objectReference: {fileID: 1449257893}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: IdleAnimator
+      value: 
+      objectReference: {fileID: 9100000, guid: d113121dc79754797bf0b90b6be4157d, type: 2}
+    - target: {fileID: 3321266887579760218, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+      propertyPath: EatingAnimator
+      value: 
+      objectReference: {fileID: 9100000, guid: 7c4580d5958b04e97ae13086929cd3f7, type: 2}
     - target: {fileID: 3990452947795247835, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
       propertyPath: m_Name
       value: SittingNPC (1)
@@ -8045,6 +8103,16 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6677124499484067587, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
   m_PrefabInstance: {fileID: 1449257891}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1449257893 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -8690339802555836800, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+  m_PrefabInstance: {fileID: 1449257891}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1494878025 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -8690339802555836800, guid: b38f94b2f1953254e897a452e6ead7a9, type: 3}
+  m_PrefabInstance: {fileID: 911893963}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1552891081
 GameObject:
