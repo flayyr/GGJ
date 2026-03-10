@@ -6,17 +6,12 @@ public class EndScreenScore : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI scoreText;
     public Sprite[] scoreImg;
-    public RuntimeAnimatorController S;
-    private Animator toUse;
-
-    //public int attendeesLeft;
-
     public Image imgChange;
 
     private void Start()
     {
 
-        toUse = GetComponent<Animator>();
+        //toUse = GetComponent<Animator>();
 
         
         FadeToWhite.instance.FadeIn();
@@ -27,7 +22,6 @@ public class EndScreenScore : MonoBehaviour
             //scoreText.text = "S";
             imgChange.sprite = scoreImg[5];
             //toUse.runtimeAnimatorController = S;
-            imgChange.GetComponent<Animator>().runtimeAnimatorController = S;
         }
         else if (attendeesLeft == 1)
         {
