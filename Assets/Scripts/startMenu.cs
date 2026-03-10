@@ -24,10 +24,12 @@ public class startMenu : MonoBehaviour
     public void SwitchScene()
     {
         SceneManager.LoadScene(sceneToGoTo);
+        SFXManager.instance.PlaySound(SFXManager.instance.menuSelect);
     }
 
     public void QuitGame()
     {
+        SFXManager.instance.PlaySound(SFXManager.instance.menuSelect);
         Application.Quit();
     }
 

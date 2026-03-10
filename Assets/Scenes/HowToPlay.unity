@@ -540,7 +540,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: -33.2}
+  m_AnchoredPosition: {x: 5, y: 71}
   m_SizeDelta: {x: 811.1073, y: 371.9999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &754938869
@@ -563,11 +563,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Welcome to John Money\u2019s weekly ball extravaganza! \n\nServe and entertain
-    the guests to stay in their good graces \u2014 otherwise, they may leave the
-    event, and it\u2019ll be bound to leave a stain on your reputation! \n\nYou may
-    find yourself catering to the host himself, in which case, the stakes will be
-    extra high. . .\n"
+  m_text: "Movement: WASD, Shift to dash, Space to interact. Be careful when rushing
+    around the venue, especially if you\u2019re carrying refreshments!\nDrinks: Thirsty
+    guests need ice refills for their drinks. Why don\u2019t you pitch in?\n\nFood:
+    Head to the large refreshments table at the bottom right of the ballroom to prepare
+    some shrimp cocktails for peckish guests. Don\u2019t let anyone go hungry!\n\nSocializing:
+    Every now and then, guests will want to have a chat with you as you pass by.
+    Play along or act nonchalant \u2014 but leaving might make you look rude!\n\nYou
+    may find yourself catering to the host himself, in which case, the stakes will
+    be extra high. . .\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e8377ab896ded40c3b69c92a18c1741c, type: 2}
   m_sharedMaterial: {fileID: 8075807617313087475, guid: e8377ab896ded40c3b69c92a18c1741c, type: 2}
@@ -594,8 +598,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 23.93
+  m_fontSizeBase: 23.93
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -862,7 +866,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: -30}
+  m_AnchoredPosition: {x: 5, y: 80}
   m_SizeDelta: {x: 811.1073, y: 371.9999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1156937694
@@ -885,11 +889,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Welcome to John Money\u2019s weekly ball extravaganza! \n\nServe and entertain
-    the guests to stay in their good graces \u2014 otherwise, they may leave the
-    event, and it\u2019ll be bound to leave a stain on your reputation! \n\nYou may
-    find yourself catering to the host himself, in which case, the stakes will be
-    extra high. . .\n"
+  m_text: "Movement: WASD, Shift to dash, Space to interact. Be careful when rushing
+    around the venue, especially if you\u2019re carrying refreshments!\r\nDrinks:
+    Thirsty guests need ice refills for their drinks. Why don\u2019t you pitch in?\n\r\nFood:
+    Head to the large refreshments table at the bottom right of the ballroom to prepare
+    some shrimp cocktails for peckish guests. Don\u2019t let anyone go hungry!\n\r\nSocializing:
+    Every now and then, guests will want to have a chat with you as you pass by.
+    Play along or act nonchalant \u2014 but leaving might make you look rude!\n\nYou
+    may find yourself catering to the host himself, in which case, the stakes will
+    be extra high. . .\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e8377ab896ded40c3b69c92a18c1741c, type: 2}
   m_sharedMaterial: {fileID: 8075807617313087475, guid: e8377ab896ded40c3b69c92a18c1741c, type: 2}
@@ -916,8 +924,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 23.93
+  m_fontSizeBase: 23.93
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1142,10 +1150,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

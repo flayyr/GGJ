@@ -31,6 +31,7 @@ public class SFXManager : MonoBehaviour
     {
         source = GetComponent<AudioSource>();
         instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     public void PlaySound(AudioClip[] clips)
