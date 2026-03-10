@@ -9,6 +9,7 @@ TagManager:
   - shrimp
   - shrimpLock
   - pitcherLock
+  - NPC
   layers:
   - Default
   - TransparentFX
