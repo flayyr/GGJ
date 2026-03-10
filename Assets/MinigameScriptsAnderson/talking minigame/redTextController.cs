@@ -9,6 +9,7 @@ public class redTextController : MonoBehaviour
     public bool rando;
 
     [SerializeField] portraitController portraitController;
+    
 
     private TextMeshProUGUI tmp;
 
@@ -40,7 +41,7 @@ public class redTextController : MonoBehaviour
         portraitController.SetUp();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
 

@@ -20,6 +20,11 @@ public class NPCScript : MonoBehaviour
     {
         irritateTimer += amount;
         spriteRenderer.color = new Color(1f, 1f - (irritateTimer / irritationThreshold), 1f - (irritateTimer / irritationThreshold), 1f);
+
+        if (amount >= 1f)
+        {
+            SFXManager.instance.PlaySound(SFXManager.instance.angry);
+        }
         if (irritateTimer >= irritationThreshold)
         {
             Leave();
@@ -35,6 +40,7 @@ public class NPCScript : MonoBehaviour
     protected virtual void Leave()
     {
         AttendeeManager.instance.AttendeeLeave();
+        SFXManager.instance.PlaySound(SFXManager.instance.leave);
         Destroy(gameObject);
         Debug.Log("Too irritated, attendee leaving");
     }

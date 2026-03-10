@@ -62,7 +62,7 @@ public class DrinkNPC : NPCScript
         {
             if (level==0)
             {
-                IncreaseIrritation(10);
+                IncreaseIrritation(5);
                 sociability = baseSociability;
             }
             else if(level==1)

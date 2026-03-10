@@ -9,9 +9,21 @@ public class ButtonController1 : MonoBehaviour
     [SerializeField] minigameExit parent;
     [SerializeField] redTextController redTextController;
     [SerializeField] TextMeshProUGUI matchText;
+    [SerializeField] float talkSoundInterval;
 
     int prevButton = -1;
     int progress = 0;
+
+    float talkTimer = 0;
+    private void Update()
+    {
+        talkTimer += Time.deltaTime;
+        if(talkTimer > talkSoundInterval)
+        {
+            talkTimer = 0;
+            SFXManager.instance.PlaySound(SFXManager.instance.talk);
+        }
+    }
 
     private void ShuffleButtons()
     {
@@ -49,6 +61,8 @@ public class ButtonController1 : MonoBehaviour
         }
         prevButton = 0;
         ShuffleButtons();
+
+        SFXManager.instance.PlaySound(SFXManager.instance.menuPress);
     }
 
     public void NonCommit()
@@ -65,11 +79,15 @@ public class ButtonController1 : MonoBehaviour
         }
         prevButton = 1;
         ShuffleButtons();
+
+        SFXManager.instance.PlaySound(SFXManager.instance.menuPress);
     }
 
     public void RunAway()
     {
         parent.EndTalk(0);
         parent.exit = true;
+
+        SFXManager.instance.PlaySound(SFXManager.instance.menuPress);
     }
 }

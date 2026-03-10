@@ -484,6 +484,7 @@ MonoBehaviour:
   - {fileID: 9100000, guid: 6f07a707c66391345a65bf96e099e2d4, type: 2}
   - {fileID: 9100000, guid: 94871ab4f5d574d4a9763d37a469538f, type: 2}
   - {fileID: 9100000, guid: 223fe651fb9ad754b98a8f91df753407, type: 2}
+  - {fileID: 9100000, guid: b9844932eb1978546bd025f906ccec6c, type: 2}
 --- !u!1 &2148697419531415720
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,6 +700,7 @@ MonoBehaviour:
   parent: {fileID: 7426274977397835924}
   redTextController: {fileID: 6731537454344464792}
   matchText: {fileID: 8726408249973438347}
+  talkSoundInterval: 0.12
 --- !u!1 &4353781451382525531
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,6 +966,7 @@ MonoBehaviour:
   - backstabber
   - dead parents
   - politics
+  - baby skulls
   select: 0
 --- !u!1 &6211295686846992250
 GameObject:

@@ -11,6 +11,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] float dashDuration;
     [SerializeField] float dashCD;
     [SerializeField] float crashDuration;
+    [SerializeField] float stepDistance;
 
     [HideInInspector]public bool hasFood;
 
@@ -33,8 +34,17 @@ public class PlayerScript : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    Vector3 lastStepPosition;
+
     void Update()
     {
+        if (!dashing && (transform.position - lastStepPosition).magnitude > stepDistance)
+        {
+            lastStepPosition = transform.position;
+            SFXManager.instance.PlaySound(SFXManager.instance.footsteps);
+        }
+
+
         if (MinigameManager.instance.state == GameState.inGame || crashTimer>0)
         {
             rb.linearVelocity = Vector3.zero;
@@ -246,6 +256,7 @@ public class PlayerScript : MonoBehaviour
             dashing = true;
             rb.linearVelocity = prevMoveDir * moveSpeed * dashAmount;
             dashTimer = dashDuration;
+            SFXManager.instance.PlaySound(SFXManager.instance.dash);
         }
 
         if (dashing)
@@ -274,6 +285,8 @@ public class PlayerScript : MonoBehaviour
             {
                 collision.gameObject.GetComponent<NPCScript>().IncreaseIrritation(10f);
             }
+
+            SFXManager.instance.PlaySound(SFXManager.instance.collisions);
         }
     }
 }
