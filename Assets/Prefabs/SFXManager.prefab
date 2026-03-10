@@ -226,6 +226,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8fa764288f1612e4e8de55555a63d83f, type: 3}
   loseGame:
   - {fileID: 8300000, guid: 1c9c688e16c8a914f9e86d95392670f5, type: 3}
+  toast:
+  - {fileID: 8300000, guid: d6dce0fdff5b07d46ba6738af1aef033, type: 3}
   wiping: {fileID: 8300000, guid: c358c8a3e2fca4a4bae69f5411ae2679, type: 3}
   wipingSource: {fileID: 2835112477002710011}
   wipeVolume: 3

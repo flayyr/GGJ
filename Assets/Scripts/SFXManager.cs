@@ -18,6 +18,7 @@ public class SFXManager : MonoBehaviour
     [SerializeField] public AudioClip[] leave;
     [SerializeField] public AudioClip[] winGame;
     [SerializeField] public AudioClip[] loseGame;
+    [SerializeField] public AudioClip[] toast;
 
 
     [SerializeField] public AudioClip wiping;

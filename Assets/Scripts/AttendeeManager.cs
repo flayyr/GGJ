@@ -8,6 +8,7 @@ public class AttendeeManager : MonoBehaviour
     [SerializeField] float[] toastIntervals;
     [SerializeField] float endingTimeLength;
     [SerializeField] TextMeshProUGUI toastTimerText;
+    [SerializeField] ParticleSystem toastParticle;
 
     [HideInInspector]public int attendeesLeft = 0;
 
@@ -76,6 +77,9 @@ public class AttendeeManager : MonoBehaviour
                     attendee.hasDrink = false;
                 }
             }
+
+            toastParticle.Play();
+            SFXManager.instance.PlaySound(SFXManager.instance.toast);
             
             currToast++;
             if(currToast<toastIntervals.Length)
