@@ -78,7 +78,8 @@ public class AttendeeManager : MonoBehaviour
             }
             
             currToast++;
-            toastTimer = toastIntervals[currToast];
+            if(currToast<toastIntervals.Length)
+                toastTimer = toastIntervals[currToast];
             if (currToast == toastIntervals.Length)
             {
                 GameEnd.instance.finalTimerLength = endingTimeLength;

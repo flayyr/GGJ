@@ -30,7 +30,7 @@ public class MusicManager : MonoBehaviour
 
         if (newLevel != speedLevel)
         {
-            float newProgress = (musicSource.time / musics[speedLevel].length) * musics[newLevel].length;
+            float newProgress = ((musicSource.time / musics[speedLevel].length)%1f) * musics[newLevel].length;
             //newProgress = musicSource.time;
             speedLevel = newLevel;
             musicSource.clip = musics[newLevel];

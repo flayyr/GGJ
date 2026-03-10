@@ -31,7 +31,7 @@ public class FadeToWhite : MonoBehaviour
             image.color = new Color(1, 1, 1, timer / fadeDuration);
             if (timer > fadeDuration)
             {
-                Destroy(deleteWhenFading);
+                deleteWhenFading.SetActive(false);
                 SceneManager.LoadScene("EndScene");
             }
         }
