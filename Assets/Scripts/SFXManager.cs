@@ -58,7 +58,6 @@ public class SFXManager : MonoBehaviour
         if (playingWipe)
         {
             wipingSource.volume = wipeScript.wipeVelocity * wipeVolume;
-            Debug.Log(wipeScript.wipeVelocity * wipeVolume);
         }
     }
 }
