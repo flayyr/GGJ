@@ -2449,6 +2449,7 @@ MonoBehaviour:
   grabbed: {fileID: 3178689199066720803, guid: 7f6dbd13431215c489078b89bf2a1c3d, type: 3}
   openHand: {fileID: -1935139924875356293, guid: 847c343a13a50214099ad4f7207d2ab0, type: 3}
   winCard: {fileID: 1281403355406198984}
+  loseCard: {fileID: 7400905350222394111}
   timer: 1
   parentPrefab: {fileID: 3611858419633989893}
   softlockTimer: 30
@@ -2736,7 +2737,7 @@ SpriteRenderer:
   m_SortingLayerID: 945932513
   m_SortingLayer: 1
   m_SortingOrder: 11111
-  m_Sprite: {fileID: 5914835523246927385, guid: faca22e5eba852e47896dabb8de212d9, type: 3}
+  m_Sprite: {fileID: -6405752098009995145, guid: f0b5114d900ab344e84830356a0f70fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
