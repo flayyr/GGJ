@@ -108,7 +108,7 @@ public class handShrimpMinigame : MonoBehaviour
     {
         if (other.gameObject == closestShrimp)
         {
-            //closestShrimp = null;
+
         }
     }
 

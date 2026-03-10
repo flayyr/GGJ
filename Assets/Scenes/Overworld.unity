@@ -4690,11 +4690,15 @@ PrefabInstance:
     - target: {fileID: -4665940925515765711, guid: 269c1405d03466a4f899e27509f8fc42, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: f233bd3bd95cb43ea850d109cf92ecb6, type: 2}
+      objectReference: {fileID: 9100000, guid: ed4451d996f0c704dbd289b0d0e31670, type: 2}
     - target: {fileID: 3589382343458244052, guid: 269c1405d03466a4f899e27509f8fc42, type: 3}
       propertyPath: moneyMan
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3927324170315109714, guid: 269c1405d03466a4f899e27509f8fc42, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -696220819760883718, guid: 6787b1f5aca1b41b3962f8ea221d8b6c, type: 3}
     - target: {fileID: 3927324170315109714, guid: 269c1405d03466a4f899e27509f8fc42, type: 3}
       propertyPath: m_Color.b
       value: 1
