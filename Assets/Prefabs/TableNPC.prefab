@@ -152,12 +152,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moneyMan: 0
   pointer: {fileID: 8102630978720055705}
-  irritationThreshold: 30
+  irritationThreshold: 60
   table: {fileID: 0}
-  timeToEat: 30
+  timeToEat: 60
   munchiesIncreasePerFood: 120
-  etiquette: 50
-  munchies: 120
+  etiquette: 60
+  munchies: 160
   reducedIrritationOnFoodDeliver: 10
 --- !u!95 &-8690339802555836800
 Animator:
