@@ -269,6 +269,11 @@ public class PlayerScript : MonoBehaviour
         {
             animator.runtimeAnimatorController = animations[2];
             crashTimer = crashDuration;
+            hasFood = false;
+            if (collision.gameObject.tag == "NPC")
+            {
+                collision.gameObject.GetComponent<NPCScript>().IncreaseIrritation(10f);
+            }
         }
     }
 }
