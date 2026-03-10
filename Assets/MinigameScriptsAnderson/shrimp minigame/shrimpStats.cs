@@ -38,7 +38,6 @@ public class shrimpStats : MonoBehaviour
         if(other.tag == "shrimpLock" && !other.gameObject.GetComponent<shrimpLock>().occupied)
         {
             closestLock = other.gameObject;
-            //Debug.Log(closestLock);
         }
     }
 
@@ -55,6 +54,7 @@ public class shrimpStats : MonoBehaviour
             {
                 handRef.GetComponent<handShrimpMinigame>().score++;
                 added = true;
+                //Debug.Log("YO");
                 SFXManager.instance.PlaySound(SFXManager.instance.placeShrimp);
             }
 
