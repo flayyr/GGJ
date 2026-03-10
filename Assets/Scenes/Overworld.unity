@@ -5526,6 +5526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeDuration: 4
+  deleteWhenFading: {fileID: 1948835681}
   image: {fileID: 884768792}
 --- !u!114 &884768792
 MonoBehaviour:
