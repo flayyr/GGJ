@@ -38,7 +38,7 @@ public class NPCScript : MonoBehaviour
         {
             Leave();
         }
-        if (moneyMan)
+        if (amount>0 && moneyMan)
         {
             AttendeeManager.instance.attendeesLeft += 100;
             GameEnd.instance.EndGame();
