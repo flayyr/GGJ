@@ -5,14 +5,16 @@ public class AttendeeManager : MonoBehaviour
 {
     public static AttendeeManager instance;
 
-    [SerializeField] float toastInterval;
+    [SerializeField] float[] toastIntervals;
+    [SerializeField] float endingTimeLength;
     [SerializeField] TextMeshProUGUI toastTimerText;
 
-    public int attendeesLeft = 0;
+    [HideInInspector]public int attendeesLeft = 0;
 
     DrinkNPC[] attendees;
 
     float toastTimer;
+    int currToast = 0;
 
     private void Awake()
     {
@@ -23,7 +25,7 @@ public class AttendeeManager : MonoBehaviour
     private void Start()
     {
         attendees = FindObjectsByType<DrinkNPC>(FindObjectsSortMode.None);
-        toastTimer = toastInterval;
+        toastTimer = toastIntervals[currToast];
     }
 
     public void AttendeeLeave()
@@ -34,8 +36,25 @@ public class AttendeeManager : MonoBehaviour
     private void Update()
     {
         toastTimer-=Time.deltaTime;
-        if(toastTimerText!=null)
-            toastTimerText.text = "Next Toast: "+Mathf.CeilToInt(toastTimer);
+        if (toastTimerText != null)
+        {
+            if (currToast == toastIntervals.Length)
+            {
+                if (toastTimer < 0)
+                {
+                    toastTimer = 0;
+                }
+                toastTimerText.text = "Time 'til Clock Out: " + Mathf.CeilToInt(toastTimer);
+            } else
+            if (currToast == toastIntervals.Length - 1)
+            {
+                toastTimerText.text = "Final Toast: " + Mathf.CeilToInt(toastTimer);
+            }
+            else
+            {
+                toastTimerText.text = "Next Toast: " + Mathf.CeilToInt(toastTimer);
+            }
+        }
         if (toastTimer <= 0)
         {
             foreach (DrinkNPC attendee in attendees)
@@ -51,7 +70,14 @@ public class AttendeeManager : MonoBehaviour
                     attendee.hasDrink = false;
                 }
             }
-            toastTimer = toastInterval;
+            toastTimer = toastIntervals[currToast];
+            currToast++;
+            if (currToast == toastIntervals.Length)
+            {
+                GameEnd.instance.finalTimerLength = endingTimeLength;
+                GameEnd.instance.ending = true;
+                toastTimer = endingTimeLength;
+            }
         }
     }
 }

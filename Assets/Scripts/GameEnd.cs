@@ -3,25 +3,29 @@ using UnityEngine.SceneManagement;
 
 public class GameEnd : MonoBehaviour
 {
-    [SerializeField] float gameLength;
-    public static GameEnd instance;
+    [HideInInspector]public float finalTimerLength;
+    [HideInInspector]public static GameEnd instance;
 
     float timer = 0;
+    public bool ending = false;
     private void Awake()
     {
         instance = this;
     }
     private void Update()
     {
-        timer += Time.deltaTime;
-        if (timer > gameLength)
+        if (ending)
         {
-            EndGame();
+            timer += Time.deltaTime;
+            if (timer > finalTimerLength)
+            {
+                EndGame();
+            }
         }
     }
 
     public void EndGame()
     {
-        SceneManager.LoadScene("EndScene");
+        FadeToWhite.instance.FadeOut();
     }
 }

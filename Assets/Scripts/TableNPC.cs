@@ -23,6 +23,7 @@ public class TableNPC : NPCScript
         {
             munchies += munchiesIncreasePerFood;
             IncreaseIrritation(-reducedIrritationOnFoodDeliver);
+            pointer.Hide();
         }
         else if (type == GameType.clean)
         {
@@ -43,14 +44,28 @@ public class TableNPC : NPCScript
         if (table.state == TableState.dirty)
         {
             etiquette -= Time.deltaTime;
+            if (etiquette < 0)
+            {
+                etiquette = 0;
+            }
         }
         else
         {
             etiquette += Time.deltaTime * 0.33f;
+            if(etiquette > 100f)
+            {
+                etiquette = 100;
+            }
         }
 
-        if(table.state != TableState.eating)
+        if (table.state != TableState.eating)
+        {
             munchies -= Time.deltaTime;
+            if(munchies < 0)
+            {
+                munchies = 0;
+            }
+        }
 
         if (etiquette <= 0)
         {
