@@ -223,7 +223,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f87ddeccfc137d24c9ff9ca070bb4fff, type: 3}
   - {fileID: 8300000, guid: 3bd1e3c091d151f44a5da5f8a0b63984, type: 3}
   winGame:
-  - {fileID: 8300000, guid: 29e21c5589f128e419b5aa77336be2a4, type: 3}
+  - {fileID: 8300000, guid: 8fa764288f1612e4e8de55555a63d83f, type: 3}
   loseGame:
   - {fileID: 8300000, guid: 1c9c688e16c8a914f9e86d95392670f5, type: 3}
   wiping: {fileID: 8300000, guid: c358c8a3e2fca4a4bae69f5411ae2679, type: 3}
