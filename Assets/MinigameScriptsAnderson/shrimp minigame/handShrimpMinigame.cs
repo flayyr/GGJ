@@ -70,6 +70,7 @@ public class handShrimpMinigame : MonoBehaviour
             if (!winCard.activeInHierarchy)
             {
                 winCard.SetActive(true);
+                SFXManager.instance.PlaySound(SFXManager.instance.winGame);
             }
         }
 
@@ -78,6 +79,8 @@ public class handShrimpMinigame : MonoBehaviour
             if (!loseCard.activeInHierarchy)
             {
                 loseCard.SetActive(true);
+
+                SFXManager.instance.PlaySound(SFXManager.instance.loseGame);
             }
         }
 

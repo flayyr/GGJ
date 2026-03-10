@@ -12,11 +12,14 @@ public class iceDeletion : MonoBehaviour
     public float offset;
     public float offsetX;
 
+    Rigidbody2D rb;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         startY = gameObject.transform.position.y;
         startX = gameObject.transform.position.x;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -30,6 +33,7 @@ public class iceDeletion : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        SFXManager.instance.PlaySound(SFXManager.instance.iceClink);
+        if(rb.linearVelocity.magnitude>8f)
+            SFXManager.instance.PlaySound(SFXManager.instance.iceClink);
     }
 }

@@ -16,6 +16,13 @@ public class SFXManager : MonoBehaviour
     [SerializeField] public AudioClip[] talk;
     [SerializeField] public AudioClip[] angry;
     [SerializeField] public AudioClip[] leave;
+    [SerializeField] public AudioClip[] winGame;
+    [SerializeField] public AudioClip[] loseGame;
+
+
+    [SerializeField] public AudioClip wiping;
+    [SerializeField] AudioSource wipingSource;
+    [SerializeField] float wipeVolume;
 
     AudioSource source;
 
@@ -30,5 +37,28 @@ public class SFXManager : MonoBehaviour
         AudioClip clip = clips[Random.Range(0, clips.Length)];
         source.pitch = Random.Range(0.95f, 1.05f);
         source.PlayOneShot(clip);
+    }
+
+    bool playingWipe = false;
+    TableWiping wipeScript;
+    public void PlayWipingSound(TableWiping wipingScript)
+    {
+        wipingSource.clip = wiping;
+        wipingSource.Play();
+        playingWipe = true;
+        wipeScript = wipingScript;
+    }
+    public void StopWipe()
+    {
+        playingWipe = false;
+        wipingSource.Stop();
+    }
+    private void Update()
+    {
+        if (playingWipe)
+        {
+            wipingSource.volume = wipeScript.wipeVelocity * wipeVolume;
+            Debug.Log(wipeScript.wipeVelocity * wipeVolume);
+        }
     }
 }

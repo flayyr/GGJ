@@ -55,7 +55,7 @@ public class shrimpStats : MonoBehaviour
                 handRef.GetComponent<handShrimpMinigame>().score++;
                 added = true;
                 //Debug.Log("YO");
-                SFXManager.instance.PlaySound(SFXManager.instance.placeShrimp);
+                SFXManager.instance.PlaySound(SFXManager.instance.placeShrimpSuccess);
             }
 
         }

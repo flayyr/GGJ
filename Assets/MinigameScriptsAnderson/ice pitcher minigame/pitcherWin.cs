@@ -31,6 +31,7 @@ public class pitcherWin : MonoBehaviour
             {
                 loseCard.SetActive(true);
                 parentPrefab.GetComponent<minigameExit>().win = false;
+                SFXManager.instance.PlaySound(SFXManager.instance.loseGame);
             }
         }
 
@@ -62,6 +63,7 @@ public class pitcherWin : MonoBehaviour
             if (!winCard.activeInHierarchy)
             {
                 winCard.SetActive(true);
+                SFXManager.instance.PlaySound(SFXManager.instance.winGame);
             }
         }
     }

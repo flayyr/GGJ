@@ -21,11 +21,16 @@ public class TableWiping : MonoBehaviour
     float dist = 0;
     Vector3 prevPos;
 
+    public float wipeVelocity;
+
     private void Start()
     {
         prevPos = transform.position;
 
         tempColor1 = stain1.GetComponent<SpriteRenderer>().material.color;
+
+        if(SFXManager.instance!=null)
+            SFXManager.instance.PlayWipingSound(this);
 
     }
     private void Update()
@@ -34,7 +39,9 @@ public class TableWiping : MonoBehaviour
         {
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = new Vector3(mousePos.x, mousePos.y, 0f);
-            dist += (transform.position - prevPos).magnitude;
+            float currAmount = (transform.position - prevPos).magnitude;
+            dist += currAmount;
+            wipeVelocity = currAmount / Time.deltaTime;
             prevPos = transform.position;
         }
 
@@ -65,7 +72,10 @@ public class TableWiping : MonoBehaviour
             //parent.exit = true;
             if (!winCard.activeInHierarchy)
             {
+                SFXManager.instance.StopWipe();
                 winCard.SetActive(true);
+                SFXManager.instance.PlaySound(SFXManager.instance.winGame);
+
             }
         }
     }
