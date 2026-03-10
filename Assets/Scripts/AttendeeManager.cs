@@ -76,8 +76,9 @@ public class AttendeeManager : MonoBehaviour
                     attendee.hasDrink = false;
                 }
             }
-            toastTimer = toastIntervals[currToast];
+            
             currToast++;
+            toastTimer = toastIntervals[currToast];
             if (currToast == toastIntervals.Length)
             {
                 GameEnd.instance.finalTimerLength = endingTimeLength;
