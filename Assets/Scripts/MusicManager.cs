@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
+    public static MusicManager instance;
+
     [SerializeField] AudioClip[] musics;
     [SerializeField] AudioSource mainSource;
     [SerializeField] AudioSource altSource;
@@ -13,6 +15,7 @@ public class MusicManager : MonoBehaviour
 
     private void Awake()
     {
+        instance = this;
         mainSource.clip = musics[speedLevel];
         DontDestroyOnLoad(gameObject);
     }
@@ -20,6 +23,11 @@ public class MusicManager : MonoBehaviour
     private void Update()
     {
         int newLevel = 0;
+
+        if (AttendeeManager.instance == null)
+        {
+            return;
+        }
 
         if (AttendeeManager.instance.irritatedCount>0)
         {

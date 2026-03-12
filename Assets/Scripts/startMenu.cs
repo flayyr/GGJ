@@ -23,8 +23,15 @@ public class startMenu : MonoBehaviour
 
     public void SwitchScene()
     {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName( "EndScene")|| SceneManager.GetActiveScene() == SceneManager.GetSceneByName("HowToPlay"))
+        {
+            Destroy(SFXManager.instance.gameObject);
+            Destroy(MusicManager.instance.gameObject);
+        }
         SceneManager.LoadScene(sceneToGoTo);
-        SFXManager.instance.PlaySound(SFXManager.instance.menuSelect);
+        if(SFXManager.instance!= null)
+            SFXManager.instance.PlaySound(SFXManager.instance.menuSelect);
+        
     }
 
     public void QuitGame()

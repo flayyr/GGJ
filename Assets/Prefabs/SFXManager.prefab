@@ -211,7 +211,7 @@ MonoBehaviour:
   menuPress:
   - {fileID: 8300000, guid: 27b961e040079cc4dbb3307f40d777e8, type: 3}
   menuSelect:
-  - {fileID: 8300000, guid: 8478d76cd6d16234abc75e203edd3b7e, type: 3}
+  - {fileID: 8300000, guid: 27b961e040079cc4dbb3307f40d777e8, type: 3}
   talk:
   - {fileID: 8300000, guid: 2bd15f4045c2dbf4e9ae049fe3abf3cb, type: 3}
   angry:
