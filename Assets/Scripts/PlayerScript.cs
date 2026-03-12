@@ -38,6 +38,8 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
+        //sprender.sortingOrder = Mathf.RoundToInt(40-transform.position.y);
+
         if (!dashing && (transform.position - lastStepPosition).magnitude > stepDistance)
         {
             lastStepPosition = transform.position;

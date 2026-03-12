@@ -2,16 +2,19 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
-    AudioSource musicSource;
-
     [SerializeField] AudioClip[] musics;
+    [SerializeField] AudioSource mainSource;
+    [SerializeField] AudioSource altSource;
+    [SerializeField] float musicCrossFadeDuration = 5;
 
     int speedLevel = 0;
+    bool fading = false;
+    float fadeTimer = 0;
 
     private void Awake()
     {
-        musicSource = GetComponent<AudioSource>();
-        musicSource.clip = musics[speedLevel];
+        mainSource.clip = musics[speedLevel];
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Update()
@@ -30,14 +33,39 @@ public class MusicManager : MonoBehaviour
 
         if (newLevel != speedLevel)
         {
-            float newProgress = ((musicSource.time / musics[speedLevel].length)%1f) * musics[newLevel].length;
+            float newProgress = ((mainSource.time / musics[speedLevel].length)%1f) * musics[newLevel].length;
             //newProgress = musicSource.time;
             speedLevel = newLevel;
-            musicSource.clip = musics[newLevel];
-            musicSource.time = newProgress;
-            musicSource.Play();
-            musicSource.time = newProgress;
 
+            AudioSource temp = mainSource;
+            mainSource = altSource;
+            altSource = temp;
+
+
+            mainSource.clip = musics[newLevel];
+            mainSource.volume = 0;
+            mainSource.time = newProgress;
+            mainSource.Play();
+            mainSource.time = newProgress;
+
+            fading = true;
+
+        }
+
+        if (fading)
+        {
+            fadeTimer += Time.deltaTime;
+
+            mainSource.volume = fadeTimer / musicCrossFadeDuration;
+            altSource.volume = 1f - mainSource.volume;
+
+            if (fadeTimer >= musicCrossFadeDuration)
+            {
+                mainSource.volume = 1;
+                altSource.volume = 0;
+                fadeTimer = 0;
+                fading = false;
+            }
         }
         
     }

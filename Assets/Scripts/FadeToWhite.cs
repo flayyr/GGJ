@@ -28,7 +28,7 @@ public class FadeToWhite : MonoBehaviour
         if(state == FadeState.fadeOut)
         {
             timer += Time.deltaTime;
-            image.color = new Color(1, 1, 1, timer / fadeDuration);
+            image.color = new Color(0, 0, 0, timer / fadeDuration);
             if (timer > fadeDuration)
             {
                 deleteWhenFading.SetActive(false);
@@ -38,7 +38,7 @@ public class FadeToWhite : MonoBehaviour
         else if (state == FadeState.fadeIn)
         {
             timer -= Time.deltaTime;
-            image.color = new Color(1, 1, 1, timer / fadeDuration);
+            image.color = new Color(0, 0, 0, timer / fadeDuration);
             if (timer < 0)
             {
                 gameObject.SetActive(false);
