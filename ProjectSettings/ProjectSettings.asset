@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: Apocalypse
   productName: Service With a Smile
-  defaultCursor: {fileID: 2800000, guid: 59ffe9cf6b76bdf4dabc00b72658d59e, type: 3}
+  defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.0627451, g: 0.05490196, b: 0.05490196, a: 1}
   m_ShowUnitySplashScreen: 1
